@@ -1,0 +1,19 @@
+gradle.projectsEvaluated {
+    def project = rootProject
+    def fixture = project.sourceSets.create('armorIconSmoke') {
+        java.srcDir('tools/armor-icon-smoke')
+        resources.srcDir('tools/armor-icon-smoke-resources')
+        compileClasspath += project.sourceSets.main.compileClasspath + project.sourceSets.main.output
+        runtimeClasspath += project.sourceSets.main.runtimeClasspath
+    }
+    project.extensions.getByName('neoForge').mods.create('armor_icon_smoke') {
+        sourceSet(fixture)
+    }
+    project.extensions.getByName('neoForge').runs.getByName('client').with {
+        gameDirectory = project.file('run/armor-icon-smoke')
+        programArgument('--width')
+        programArgument('1100')
+        programArgument('--height')
+        programArgument('700')
+    }
+}

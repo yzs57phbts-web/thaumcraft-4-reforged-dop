@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:balanced_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:salis_mundus"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "thaumcraft:balanced_shard"
+  },
+  "result": {
+    "id": "thaumcraft:salis_mundus"
+  }
+}

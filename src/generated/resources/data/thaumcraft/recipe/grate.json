@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "T"
+  ],
+  "key": {
+    "S": {
+      "item": "thaumcraft:arcane_stone_slab"
+    },
+    "T": {
+      "item": "minecraft:iron_trapdoor"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:item_grate"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:copper_nugget",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:lead_nugget",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:quicksilver_drop",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_nugget",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:tin_nugget",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_metal_nugget",
+      "required": false
+    }
+  ]
+}

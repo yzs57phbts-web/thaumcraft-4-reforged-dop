@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "thaumcraft:item/bonebow_pulling_2"
+  }
+}

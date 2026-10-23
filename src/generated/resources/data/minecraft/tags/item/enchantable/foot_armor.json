@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:boots_traveller",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_cult_boots",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:robe_boots",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_boots",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_boots",
+      "required": false
+    }
+  ]
+}

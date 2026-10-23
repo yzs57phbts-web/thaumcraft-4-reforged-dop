@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/arcane_bellows"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/arcane_bellows"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/arcane_bellows"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/arcane_bellows"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/arcane_bellows"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/arcane_bellows"
+    }
+  }
+}

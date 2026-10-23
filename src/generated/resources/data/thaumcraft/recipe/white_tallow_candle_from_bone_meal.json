@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:white_tallow_candle"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "tag": "thaumcraft:tallow_candles"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:white_tallow_candle"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:silverwood_log"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:silverwood_planks"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "thaumcraft:silverwood_log"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:silverwood_planks",
+    "count": 4
+  }
+}

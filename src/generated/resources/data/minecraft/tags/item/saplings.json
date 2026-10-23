@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:greatwood_sapling",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_sapling",
+      "required": false
+    }
+  ]
+}

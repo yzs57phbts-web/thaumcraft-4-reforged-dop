@@ -1,0 +1,51 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "effects": {
+    "water_color": 4159204,
+    "sky_color": 0,
+    "fog_color": 12638463,
+    "water_fog_color": 329011
+  },
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "thaumcraft:inhabited_zombie",
+        "minCount": 1,
+        "maxCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "thaumcraft:eldritch_guardian",
+        "minCount": 1,
+        "maxCount": 1,
+        "weight": 1
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

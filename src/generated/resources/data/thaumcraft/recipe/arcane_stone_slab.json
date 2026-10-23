@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:arcane_stone_bricks"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:arcane_stone_slab"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "K": {
+      "item": "thaumcraft:arcane_stone_bricks"
+    }
+  },
+  "pattern": [
+    "KKK"
+  ],
+  "result": {
+    "id": "thaumcraft:arcane_stone_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,35 @@
+name: Verify
+
+on:
+  push:
+    branches: [main, "mc/**", "codex/**"]
+    paths-ignore: ["**.md", "**.txt"]
+  workflow_dispatch:
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v5
+      - name: Check source boundaries and generated resources
+        run: |
+          python3 tools/check_seams.py
+          python3 tools/check_generated.py
+      - name: Build and run every required GameTest namespace
+        run: |
+          chmod +x gradlew
+          ./gradlew build runAllGameTests prepareClientRun
+      - name: Check geometry and validation tools
+        run: python3 -m unittest discover -s tools -p 'test_*.py'

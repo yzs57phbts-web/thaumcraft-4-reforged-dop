@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:greatwood_planks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_planks",
+      "required": false
+    }
+  ]
+}

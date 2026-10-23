@@ -1,0 +1,1025 @@
+{
+  "minecraft_version": "1.21.1",
+  "sections": {
+    "builtin_entity": "item id -> special renderer. The item model json is parent minecraft:builtin/entity (with the display transforms of a block item), so the item is drawn by a BlockEntityWithoutLevelRenderer: dispatch on the item id, create the renderer named in renderer (26.3 special model type id) with params. base_model is the 26.3 base model the special renderer was layered on (its textures are copied into the builtin/entity json for the particle). Entries with views_by_display_context are items whose renderer takes params.view: in renderByItem use views_by_display_context[ItemDisplayContext name] and fall back to fallback_view when the context is not listed (ground, fixed, head, gui of other kinds).",
+    "composite": "item id -> list of parts drawn together. The item json is builtin/entity. The BlockEntityWithoutLevelRenderer must draw parts in order: item_model/block_model is a baked json model to load as an additional model (ModelEvent.RegisterAdditional) and render with the item transform, builtin_entity is a special renderer as in builtin_entity.",
+    "tints": "item id -> layer index -> colour source. constant is a fixed RGB for ItemColor of that layer (tintindex = layer index; block items use the tintindex of the block model elements). source is a tint source id: thaumcraft:aspect = colour of the first aspect of the stack component thaumcraft:aspects (white when empty); thaumcraft:research_note = colour of the research note component thaumcraft:research_note (0x999999 when absent). minecraft:dye = DyedItemColor of the stack with the recorded default color. Register one ItemColor per item with these layers.",
+    "armor_layers": "armor id -> ArmorMaterial.Layer location and the generated texture.",
+    "predicates": "item id -> properties required by model overrides; vanilla bow pull and pulling have the same behavior as minecraft:bow.",
+    "model_loaders": "block id -> NeoForge geometry loader and fallback baked model."
+  },
+  "nbt_keys": {
+    "thaumcraft:wand_parts": "wand_parts",
+    "thaumcraft:wand_vis": "wand_vis",
+    "thaumcraft:wand_target": "wand_target",
+    "thaumcraft:research_note": "research_note",
+    "thaumcraft:aspects": "aspects",
+    "thaumcraft:mirror_link": "mirror_link"
+  },
+  "predicates": {
+    "bone_bow": {
+      "minecraft:pull": {
+        "kind": "bow_pull",
+        "scale": 0.05
+      },
+      "minecraft:pulling": {
+        "kind": "using_item"
+      }
+    },
+    "magic_mirror": {
+      "thaumcraft:linked": {
+        "kind": "has_component",
+        "component": "thaumcraft:mirror_link"
+      }
+    },
+    "essentia_mirror": {
+      "thaumcraft:linked": {
+        "kind": "has_component",
+        "component": "thaumcraft:mirror_link"
+      }
+    },
+    "sinister_lodestone": {
+      "thaumcraft:sinister_lodestone_active": {
+        "kind": "sinister_node_in_range"
+      }
+    }
+  },
+  "tints": {
+    "air_infused_stone": {
+      "0": {
+        "constant": "#FFFF7E"
+      }
+    },
+    "fire_infused_stone": {
+      "0": {
+        "constant": "#FF3C01"
+      }
+    },
+    "water_infused_stone": {
+      "0": {
+        "constant": "#0090FF"
+      }
+    },
+    "earth_infused_stone": {
+      "0": {
+        "constant": "#00A000"
+      }
+    },
+    "order_infused_stone": {
+      "0": {
+        "constant": "#EECCFF"
+      }
+    },
+    "entropy_infused_stone": {
+      "0": {
+        "constant": "#555577"
+      }
+    },
+    "greatwood_leaves": {
+      "0": {
+        "constant": "#48B518"
+      }
+    },
+    "silverwood_leaves": {
+      "0": {
+        "constant": "#8899AA"
+      }
+    },
+    "white_tallow_candle": {
+      "0": {
+        "constant": "#F0F0F0"
+      }
+    },
+    "orange_tallow_candle": {
+      "0": {
+        "constant": "#EB8844"
+      }
+    },
+    "magenta_tallow_candle": {
+      "0": {
+        "constant": "#C354CD"
+      }
+    },
+    "light_blue_tallow_candle": {
+      "0": {
+        "constant": "#6689D3"
+      }
+    },
+    "yellow_tallow_candle": {
+      "0": {
+        "constant": "#DECF2A"
+      }
+    },
+    "lime_tallow_candle": {
+      "0": {
+        "constant": "#41CD34"
+      }
+    },
+    "pink_tallow_candle": {
+      "0": {
+        "constant": "#D88198"
+      }
+    },
+    "gray_tallow_candle": {
+      "0": {
+        "constant": "#434343"
+      }
+    },
+    "light_gray_tallow_candle": {
+      "0": {
+        "constant": "#A0A0A0"
+      }
+    },
+    "cyan_tallow_candle": {
+      "0": {
+        "constant": "#287697"
+      }
+    },
+    "purple_tallow_candle": {
+      "0": {
+        "constant": "#7B2FBE"
+      }
+    },
+    "blue_tallow_candle": {
+      "0": {
+        "constant": "#253192"
+      }
+    },
+    "brown_tallow_candle": {
+      "0": {
+        "constant": "#51301A"
+      }
+    },
+    "green_tallow_candle": {
+      "0": {
+        "constant": "#3B511A"
+      }
+    },
+    "red_tallow_candle": {
+      "0": {
+        "constant": "#B3312C"
+      }
+    },
+    "black_tallow_candle": {
+      "0": {
+        "constant": "#1E1B1B"
+      }
+    },
+    "air_shard": {
+      "0": {
+        "constant": "#FFFF7E"
+      }
+    },
+    "fire_shard": {
+      "0": {
+        "constant": "#FF3C01"
+      }
+    },
+    "water_shard": {
+      "0": {
+        "constant": "#0090FF"
+      }
+    },
+    "earth_shard": {
+      "0": {
+        "constant": "#00A000"
+      }
+    },
+    "order_shard": {
+      "0": {
+        "constant": "#EECCFF"
+      }
+    },
+    "entropy_shard": {
+      "0": {
+        "constant": "#555577"
+      }
+    },
+    "essentia_phial": {
+      "0": {
+        "constant": "#FFFFFF"
+      },
+      "1": {
+        "source": "thaumcraft:aspect"
+      }
+    },
+    "wisp_essence": {
+      "0": {
+        "source": "thaumcraft:aspect"
+      }
+    },
+    "crystallized_essence": {
+      "0": {
+        "source": "thaumcraft:aspect"
+      }
+    },
+    "mana_bean": {
+      "0": {
+        "source": "thaumcraft:aspect"
+      }
+    },
+    "research_notes": {
+      "0": {
+        "constant": "#FFFFFF"
+      },
+      "1": {
+        "source": "thaumcraft:research_note"
+      }
+    },
+    "discovery": {
+      "0": {
+        "constant": "#FFFFFF"
+      },
+      "1": {
+        "source": "thaumcraft:research_note"
+      }
+    },
+    "robe_chestplate": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "robe_leggings": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "robe_boots": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "void_robe_helmet": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "void_robe_chestplate": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "void_robe_leggings": {
+      "0": {
+        "source": "minecraft:dye",
+        "default": -9815936
+      }
+    },
+    "apprentice_ring_air": {
+      "0": {
+        "constant": "#FFFF7E"
+      }
+    },
+    "apprentice_ring_earth": {
+      "0": {
+        "constant": "#56C000"
+      }
+    },
+    "apprentice_ring_fire": {
+      "0": {
+        "constant": "#FF5A01"
+      }
+    },
+    "apprentice_ring_water": {
+      "0": {
+        "constant": "#3CD4FC"
+      }
+    },
+    "apprentice_ring_order": {
+      "0": {
+        "constant": "#D5D4EC"
+      }
+    },
+    "apprentice_ring_entropy": {
+      "0": {
+        "constant": "#404040"
+      }
+    },
+    "arcane_levitator": {
+      "0": {
+        "constant": "#00A000"
+      },
+      "1": {
+        "constant": "#EECCFF"
+      }
+    },
+    "brainy_zombie_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#008000"
+      }
+    },
+    "giant_brainy_zombie_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#004000"
+      }
+    },
+    "wisp_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#FFFFFF"
+      }
+    },
+    "fire_bat_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#C00000"
+      }
+    },
+    "pech_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#400040"
+      }
+    },
+    "mind_spider_spawn_egg": {
+      "0": {
+        "constant": "#AAAAAA"
+      },
+      "1": {
+        "constant": "#404040"
+      }
+    },
+    "eldritch_guardian_spawn_egg": {
+      "0": {
+        "constant": "#222222"
+      },
+      "1": {
+        "constant": "#404040"
+      }
+    },
+    "cultist_knight_spawn_egg": {
+      "0": {
+        "constant": "#FF5055"
+      },
+      "1": {
+        "constant": "#000080"
+      }
+    },
+    "cultist_cleric_spawn_egg": {
+      "0": {
+        "constant": "#FF5055"
+      },
+      "1": {
+        "constant": "#800000"
+      }
+    },
+    "eldritch_crab_spawn_egg": {
+      "0": {
+        "constant": "#555555"
+      },
+      "1": {
+        "constant": "#550000"
+      }
+    },
+    "inhabited_zombie_spawn_egg": {
+      "0": {
+        "constant": "#557755"
+      },
+      "1": {
+        "constant": "#550000"
+      }
+    },
+    "thaumic_slime_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#FF80FF"
+      }
+    },
+    "taint_spider_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#404040"
+      }
+    },
+    "taintacle_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#800080"
+      }
+    },
+    "taintacle_small_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#800090"
+      }
+    },
+    "taint_spore_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#800070"
+      }
+    },
+    "taint_spore_swarmer_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#800060"
+      }
+    },
+    "taint_swarm_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#800050"
+      }
+    },
+    "taint_chicken_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#C0C0C0"
+      }
+    },
+    "taint_cow_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#7E3A3B"
+      }
+    },
+    "taint_creeper_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#00FF00"
+      }
+    },
+    "taint_pig_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#EF99EF"
+      }
+    },
+    "taint_sheep_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#808080"
+      }
+    },
+    "taint_villager_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#00FFFF"
+      }
+    },
+    "eldritch_warden_spawn_egg": {
+      "0": {
+        "constant": "#552222"
+      },
+      "1": {
+        "constant": "#404040"
+      }
+    },
+    "eldritch_golem_spawn_egg": {
+      "0": {
+        "constant": "#555555"
+      },
+      "1": {
+        "constant": "#404040"
+      }
+    },
+    "cultist_leader_spawn_egg": {
+      "0": {
+        "constant": "#FF5055"
+      },
+      "1": {
+        "constant": "#505050"
+      }
+    },
+    "cultist_portal_spawn_egg": {
+      "0": {
+        "constant": "#FF5055"
+      },
+      "1": {
+        "constant": "#FF50FF"
+      }
+    },
+    "taintacle_giant_spawn_egg": {
+      "0": {
+        "constant": "#FFC0FF"
+      },
+      "1": {
+        "constant": "#808080"
+      }
+    }
+  },
+  "builtin_entity": {
+    "aura_node": {
+      "renderer": "thaumcraft:aura_node",
+      "params": {},
+      "base_model": "thaumcraft:item/aura_node"
+    },
+    "node_stabilizer": {
+      "renderer": "thaumcraft:node_stabilizer",
+      "params": {
+        "advanced": false
+      },
+      "base_model": "thaumcraft:item/node_stabilizer"
+    },
+    "advanced_node_stabilizer": {
+      "renderer": "thaumcraft:node_stabilizer",
+      "params": {
+        "advanced": true
+      },
+      "base_model": "thaumcraft:item/advanced_node_stabilizer"
+    },
+    "node_transducer": {
+      "renderer": "thaumcraft:node_transducer",
+      "params": {},
+      "base_model": "thaumcraft:item/node_transducer"
+    },
+    "vis_relay": {
+      "renderer": "thaumcraft:vis_relay",
+      "params": {},
+      "base_model": "thaumcraft:item/vis_relay"
+    },
+    "node_jar": {
+      "renderer": "thaumcraft:node_jar",
+      "params": {},
+      "base_model": "thaumcraft:item/node_jar"
+    },
+    "wand": {
+      "renderer": "thaumcraft:wand",
+      "params": {},
+      "base_model": "thaumcraft:item/wand",
+      "view_param": "view",
+      "views_by_display_context": {
+        "gui": "inventory",
+        "thirdperson_lefthand": "equipped",
+        "thirdperson_righthand": "equipped",
+        "firstperson_lefthand": "first_person",
+        "firstperson_righthand": "first_person"
+      },
+      "fallback_view": "entity"
+    },
+    "thaumometer": {
+      "renderer": "thaumcraft:thaumometer",
+      "params": {},
+      "base_model": "thaumcraft:item/thaumometer",
+      "view_param": "view",
+      "views_by_display_context": {
+        "gui": "inventory",
+        "thirdperson_lefthand": "equipped",
+        "thirdperson_righthand": "equipped",
+        "firstperson_lefthand": "first_person",
+        "firstperson_righthand": "first_person"
+      },
+      "fallback_view": "entity"
+    },
+    "vis_charge_relay": {
+      "renderer": "thaumcraft:vis_charge_relay",
+      "params": {},
+      "base_model": "thaumcraft:item/vis_charge_relay"
+    },
+    "runic_matrix": {
+      "renderer": "thaumcraft:runic_matrix",
+      "params": {},
+      "base_model": "thaumcraft:item/runic_matrix"
+    },
+    "alchemical_centrifuge": {
+      "renderer": "thaumcraft:centrifuge",
+      "params": {},
+      "base_model": "thaumcraft:item/alchemical_centrifuge"
+    },
+    "essentia_crystallizer": {
+      "renderer": "thaumcraft:essentia_crystallizer",
+      "params": {},
+      "base_model": "thaumcraft:item/essentia_crystallizer"
+    },
+    "essentia_reservoir": {
+      "renderer": "thaumcraft:essentia_reservoir",
+      "params": {},
+      "base_model": "thaumcraft:item/essentia_reservoir"
+    },
+    "filled_jar": {
+      "renderer": "thaumcraft:filled_jar",
+      "params": {},
+      "base_model": "thaumcraft:item/filled_jar"
+    },
+    "filled_void_jar": {
+      "renderer": "thaumcraft:filled_jar",
+      "params": {
+        "void": true
+      },
+      "base_model": "thaumcraft:item/filled_void_jar"
+    },
+    "alembic": {
+      "renderer": "thaumcraft:alembic",
+      "params": {},
+      "base_model": "thaumcraft:item/alembic"
+    },
+    "flux_scrubber": {
+      "renderer": "thaumcraft:flux_scrubber",
+      "params": {},
+      "base_model": "thaumcraft:item/flux_scrubber"
+    },
+    "arcane_bellows": {
+      "renderer": "thaumcraft:arcane_bellows",
+      "params": {},
+      "base_model": "thaumcraft:item/arcane_bellows"
+    },
+    "air_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 0
+      },
+      "base_model": "thaumcraft:item/air_crystal_cluster"
+    },
+    "fire_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 1
+      },
+      "base_model": "thaumcraft:item/fire_crystal_cluster"
+    },
+    "water_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 2
+      },
+      "base_model": "thaumcraft:item/water_crystal_cluster"
+    },
+    "earth_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 3
+      },
+      "base_model": "thaumcraft:item/earth_crystal_cluster"
+    },
+    "order_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 4
+      },
+      "base_model": "thaumcraft:item/order_crystal_cluster"
+    },
+    "entropy_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 5
+      },
+      "base_model": "thaumcraft:item/entropy_crystal_cluster"
+    },
+    "mixed_crystal_cluster": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 6
+      },
+      "base_model": "thaumcraft:item/mixed_crystal_cluster"
+    },
+    "strange_crystals": {
+      "renderer": "thaumcraft:crystal_cluster",
+      "params": {
+        "kind": 7
+      },
+      "base_model": "thaumcraft:item/strange_crystals"
+    },
+    "hungry_chest": {
+      "renderer": "thaumcraft:hungry_chest",
+      "params": {},
+      "base_model": "thaumcraft:item/hungry_chest"
+    },
+    "banner": {
+      "renderer": "thaumcraft:banner",
+      "params": {},
+      "base_model": "thaumcraft:item/banner"
+    },
+    "arcane_bore_base": {
+      "renderer": "thaumcraft:arcane_bore_base",
+      "params": {},
+      "base_model": "thaumcraft:item/arcane_bore_base"
+    },
+    "arcane_bore": {
+      "renderer": "thaumcraft:arcane_bore",
+      "params": {},
+      "base_model": "thaumcraft:item/arcane_bore"
+    }
+  },
+  "composite": {
+    "essentia_valve": {
+      "parts": [
+        {
+          "kind": "item_model",
+          "model": "thaumcraft:item/essentia_valve_base"
+        },
+        {
+          "kind": "builtin_entity",
+          "renderer": "thaumcraft:tube_valve",
+          "params": {}
+        }
+      ]
+    },
+    "brain_jar": {
+      "parts": [
+        {
+          "kind": "item_model",
+          "model": "thaumcraft:item/brain_jar_base"
+        },
+        {
+          "kind": "builtin_entity",
+          "renderer": "thaumcraft:brain_jar",
+          "params": {}
+        }
+      ]
+    }
+  },
+  "armor_layers": {
+    "goggles": {
+      "layer_id": "thaumcraft:goggles",
+      "texture": "thaumcraft:textures/models/armor/goggles_layer_1.png",
+      "meaning": "ArmorMaterial.Layer(ResourceLocation thaumcraft:goggles) resolves to textures/models/armor/goggles_layer_1.png; the png is generated into the resources from the 26.3 humanoid equipment texture"
+    },
+    "thaumium": {
+      "layer_id": "thaumcraft:thaumium",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/thaumium_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/thaumium_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "void": {
+      "layer_id": "thaumcraft:void",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/void_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/void_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "robe": {
+      "layer_id": "thaumcraft:robe",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/robe_layer_1.png",
+          "dyeable": true
+        },
+        {
+          "layer": 1,
+          "suffix": "_overlay",
+          "texture": "thaumcraft:textures/models/armor/robe_layer_1_overlay.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/robe_layer_2.png",
+          "dyeable": true
+        },
+        {
+          "layer": 2,
+          "suffix": "_overlay",
+          "texture": "thaumcraft:textures/models/armor/robe_layer_2_overlay.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "void_robe": {
+      "layer_id": "thaumcraft:void_robe",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/void_robe_layer_1.png",
+          "dyeable": true
+        },
+        {
+          "layer": 1,
+          "suffix": "_overlay",
+          "texture": "thaumcraft:textures/models/armor/void_robe_layer_1_overlay.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/void_robe_layer_2.png",
+          "dyeable": true
+        },
+        {
+          "layer": 2,
+          "suffix": "_overlay",
+          "texture": "thaumcraft:textures/models/armor/void_robe_layer_2_overlay.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "boots_traveller": {
+      "layer_id": "thaumcraft:boots_traveller",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/boots_traveller_layer_1.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "hover_harness": {
+      "layer_id": "thaumcraft:hover_harness",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/hover_harness_layer_1.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "fortress": {
+      "layer_id": "thaumcraft:fortress",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/fortress_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/fortress_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "cultist_robe": {
+      "layer_id": "thaumcraft:cultist_robe",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_robe_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_robe_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "cultist_plate": {
+      "layer_id": "thaumcraft:cultist_plate",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_plate_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_plate_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "cultist_boots": {
+      "layer_id": "thaumcraft:cultist_boots",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_boots_layer_1.png",
+          "dyeable": false
+        }
+      ]
+    },
+    "cultist_leader": {
+      "layer_id": "thaumcraft:cultist_leader",
+      "layers": [
+        {
+          "layer": 1,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_leader_layer_1.png",
+          "dyeable": false
+        },
+        {
+          "layer": 2,
+          "suffix": "",
+          "texture": "thaumcraft:textures/models/armor/cultist_leader_layer_2.png",
+          "dyeable": false
+        }
+      ]
+    }
+  },
+  "model_loaders": {
+    "warded_block": {
+      "loader": "thaumcraft:warded",
+      "fallback": "minecraft:block/stone"
+    },
+    "warded_glass": {
+      "loader": "thaumcraft:warded_glass",
+      "models": [
+        "thaumcraft:block/warded_glass_1",
+        "thaumcraft:block/warded_glass_2",
+        "thaumcraft:block/warded_glass_3",
+        "thaumcraft:block/warded_glass_4",
+        "thaumcraft:block/warded_glass_5",
+        "thaumcraft:block/warded_glass_6",
+        "thaumcraft:block/warded_glass_7",
+        "thaumcraft:block/warded_glass_8",
+        "thaumcraft:block/warded_glass_9",
+        "thaumcraft:block/warded_glass_10",
+        "thaumcraft:block/warded_glass_11",
+        "thaumcraft:block/warded_glass_12",
+        "thaumcraft:block/warded_glass_13",
+        "thaumcraft:block/warded_glass_14",
+        "thaumcraft:block/warded_glass_15",
+        "thaumcraft:block/warded_glass_16",
+        "thaumcraft:block/warded_glass_17",
+        "thaumcraft:block/warded_glass_18",
+        "thaumcraft:block/warded_glass_19",
+        "thaumcraft:block/warded_glass_20",
+        "thaumcraft:block/warded_glass_21",
+        "thaumcraft:block/warded_glass_22",
+        "thaumcraft:block/warded_glass_23",
+        "thaumcraft:block/warded_glass_24",
+        "thaumcraft:block/warded_glass_25",
+        "thaumcraft:block/warded_glass_26",
+        "thaumcraft:block/warded_glass_27",
+        "thaumcraft:block/warded_glass_28",
+        "thaumcraft:block/warded_glass_29",
+        "thaumcraft:block/warded_glass_30",
+        "thaumcraft:block/warded_glass_31",
+        "thaumcraft:block/warded_glass_32",
+        "thaumcraft:block/warded_glass_33",
+        "thaumcraft:block/warded_glass_34",
+        "thaumcraft:block/warded_glass_35",
+        "thaumcraft:block/warded_glass_36",
+        "thaumcraft:block/warded_glass_37",
+        "thaumcraft:block/warded_glass_38",
+        "thaumcraft:block/warded_glass_39",
+        "thaumcraft:block/warded_glass_40",
+        "thaumcraft:block/warded_glass_41",
+        "thaumcraft:block/warded_glass_42",
+        "thaumcraft:block/warded_glass_43",
+        "thaumcraft:block/warded_glass_44",
+        "thaumcraft:block/warded_glass_45",
+        "thaumcraft:block/warded_glass_46",
+        "thaumcraft:block/warded_glass_47"
+      ]
+    }
+  },
+  "notes": {
+    "model_elements": []
+  }
+}

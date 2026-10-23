@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:thaumium_ingot",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_metal_ingot",
+      "required": false
+    }
+  ]
+}

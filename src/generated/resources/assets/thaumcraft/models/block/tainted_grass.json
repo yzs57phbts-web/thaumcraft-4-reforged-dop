@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thaumcraft:block/taintgrass1"
+  },
+  "render_type": "minecraft:cutout"
+}

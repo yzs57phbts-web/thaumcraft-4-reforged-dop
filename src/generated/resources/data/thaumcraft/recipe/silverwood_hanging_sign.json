@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C C",
+    "LLL",
+    "LLL"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "L": {
+      "item": "thaumcraft:silverwood_log"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:silverwood_hanging_sign",
+    "count": 6
+  }
+}

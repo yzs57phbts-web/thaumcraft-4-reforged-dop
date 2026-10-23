@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:flesh_block"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    "KKK",
+    "KKK",
+    "KKK"
+  ],
+  "result": {
+    "id": "thaumcraft:flesh_block"
+  }
+}

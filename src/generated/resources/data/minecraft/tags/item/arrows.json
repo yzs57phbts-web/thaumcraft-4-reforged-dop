@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:air_arrow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:earth_arrow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:entropy_arrow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fire_arrow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:order_arrow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:water_arrow",
+      "required": false
+    }
+  ]
+}

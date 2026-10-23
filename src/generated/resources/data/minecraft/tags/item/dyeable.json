@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:robe_boots",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:robe_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:robe_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_helmet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_leggings",
+      "required": false
+    }
+  ]
+}

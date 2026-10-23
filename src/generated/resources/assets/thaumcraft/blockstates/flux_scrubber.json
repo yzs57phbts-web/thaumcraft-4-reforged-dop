@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/flux_scrubber"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/flux_scrubber"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/flux_scrubber"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/flux_scrubber"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/flux_scrubber"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/flux_scrubber"
+    }
+  }
+}

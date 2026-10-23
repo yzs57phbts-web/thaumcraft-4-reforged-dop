@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "thaumcraft:block/arcane_levitator_active"
+    },
+    "powered=true": {
+      "model": "thaumcraft:block/arcane_levitator_idle"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "textures": {
+    "particle": "thaumcraft:item/blank"
+  },
+  "gui_light": "side"
+}

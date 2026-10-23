@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:greatwood_leaves",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_leaves",
+      "required": false
+    }
+  ]
+}

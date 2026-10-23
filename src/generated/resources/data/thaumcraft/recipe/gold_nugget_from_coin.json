@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:gold_coin"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "thaumcraft:gold_coin"
+  },
+  "result": {
+    "id": "minecraft:gold_nugget"
+  }
+}

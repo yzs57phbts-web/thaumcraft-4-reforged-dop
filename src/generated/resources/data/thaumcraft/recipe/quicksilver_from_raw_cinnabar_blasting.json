@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "thaumcraft:raw_cinnabar"
+  },
+  "result": {
+    "id": "thaumcraft:quicksilver"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

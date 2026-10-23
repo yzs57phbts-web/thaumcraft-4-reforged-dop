@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/pipe_1",
+    "t": "thaumcraft:block/pipe_1"
+  },
+  "elements": [
+    {
+      "from": [
+        7,
+        7,
+        -6
+      ],
+      "to": [
+        9,
+        9,
+        7
+      ],
+      "faces": {
+        "down": {
+          "texture": "#t",
+          "uv": [
+            7,
+            3,
+            9,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#t",
+          "uv": [
+            7,
+            0,
+            9,
+            13
+          ]
+        },
+        "north": {
+          "texture": "#t"
+        },
+        "south": {
+          "texture": "#t"
+        },
+        "west": {
+          "texture": "#t",
+          "uv": [
+            0,
+            7,
+            13,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#t",
+          "uv": [
+            3,
+            7,
+            16,
+            9
+          ]
+        }
+      }
+    }
+  ],
+  "render_type": "minecraft:cutout"
+}

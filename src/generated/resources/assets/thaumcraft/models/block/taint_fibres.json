@@ -1,0 +1,53 @@
+{
+  "loader": "thaumcraft:taint_fibres",
+  "faces": [
+    "thaumcraft:block/taint_fibres_face",
+    "thaumcraft:block/taint_fibres_face",
+    "thaumcraft:block/taint_fibres_face",
+    "thaumcraft:block/taint_fibres_face",
+    "thaumcraft:block/taint_fibres_face",
+    "thaumcraft:block/taint_fibres_face"
+  ],
+  "overlays": [
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ],
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ],
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ],
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ],
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ],
+    [
+      "thaumcraft:block/taint_fibres_blank",
+      "thaumcraft:block/taint_fibres_over_1",
+      "thaumcraft:block/taint_fibres_over_2",
+      "thaumcraft:block/taint_fibres_over_3"
+    ]
+  ],
+  "grass": "thaumcraft:block/taint_fibres_grass",
+  "plant": "thaumcraft:block/taint_fibres_plant",
+  "stalk": "thaumcraft:block/taint_fibres_stalk",
+  "mature_stalk": "thaumcraft:block/taint_fibres_mature_stalk"
+}

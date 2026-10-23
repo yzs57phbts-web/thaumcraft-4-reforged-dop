@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumium_leggings"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/thaumium"
+    }
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "result": {
+    "id": "thaumcraft:thaumium_leggings"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thaumcraft:block/research_table_part"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/research_table_part"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/research_table_part"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/research_table_part"
+    }
+  }
+}

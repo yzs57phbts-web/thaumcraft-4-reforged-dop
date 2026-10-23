@@ -1,0 +1,331 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
+    exclude 'data/**/structure/test/**'
+}
+
+sourceSets {
+    gameTest {
+        java.setSrcDirs(['src/gametest/java'])
+        resources.setSrcDirs(['src/gametest/resources', 'src/main/resources', 'src/generated/resources'])
+        resources.include 'data/**/structure/test/**'
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+    smoke {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+
+configurations {
+    gameTestImplementation.extendsFrom implementation
+    gameTestCompileOnly.extendsFrom compileOnly
+    gameTestRuntimeOnly.extendsFrom runtimeOnly, localRuntime
+    smokeImplementation.extendsFrom implementation
+    smokeCompileOnly.extendsFrom compileOnly
+    smokeRuntimeOnly.extendsFrom runtimeOnly, localRuntime
+}
+
+tasks.named('processResources', ProcessResources) {
+    from(project.layout.projectDirectory) {
+        include 'icon.png', 'poster.png'
+        into 'assets/thaumcraft/textures/gui/branding'
+    }
+}
+
+repositories {
+    maven {
+        name = "Minecraft Forge"
+        url = "https://maven.minecraftforge.net/"
+        content {
+            includeGroup "com.github.glitchfiend"
+        }
+    }
+    maven {
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
+        content {
+            includeGroup "top.theillusivec4.curios"
+        }
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+        content {
+            includeGroup "mezz.jei"
+            includeGroup "net.mezzdev.config"
+        }
+    }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+base {
+    archivesName = "thaumcraft-4-reforged"
+}
+
+tasks.named('jar', Jar) {
+    archiveFileName = "thaumcraft-4-reforged-${mod_version}-${minecraft_version}.jar"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(java_version))
+
+// Test-only presence probe for optional Forbidden Magic aspects; never enters the release JAR.
+if (providers.gradleProperty('forbiddenMagicFixture').isPresent()) {
+    sourceSets.create('forbiddenMagicFixture') {
+        compileClasspath += sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.runtimeClasspath
+    }
+    tasks.register('forbiddenMagicFixtureJar', Jar) {
+        from sourceSets.forbiddenMagicFixture.output
+        archiveFileName = 'forbiddenmagic-presence-test-fixture.jar'
+    }
+}
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        minecraftVersion = project.parchment_minecraft_version
+        mappingsVersion = project.parchment_mappings_version
+    }
+
+    runs {
+        client {
+            client()
+            if (providers.gradleProperty('crucibleSmoke').isPresent()) {
+                gameDirectory = file('run/crucible25-client')
+                systemProperty 'thaumcraft.crucibleSmoke', 'true'
+                programArgument '--width'
+                programArgument '1200'
+                programArgument '--height'
+                programArgument '800'
+            }
+            if (providers.gradleProperty('auditSmoke').isPresent()) {
+                gameDirectory = file('run/audit24-client')
+                systemProperty 'thaumcraft.auditFixSmoke', 'true'
+                programArgument '--width'
+                programArgument '1200'
+                programArgument '--height'
+                programArgument '800'
+            }
+            if (providers.gradleProperty('alchemySmoke').isPresent()) {
+                gameDirectory = file('run/alchemy-network-audit')
+                systemProperty 'thaumcraft.alchemySmoke', 'true'
+                programArgument '--width'
+                programArgument '1200'
+                programArgument '--height'
+                programArgument '800'
+            }
+            if (providers.gradleProperty('nodeDevicesSmoke').isPresent()) {
+                gameDirectory = file('run/node-devices-audit')
+                systemProperty 'thaumcraft.nodeDeviceSmoke', 'true'
+                programArgument '--width'
+                programArgument '1200'
+                programArgument '--height'
+                programArgument '800'
+            }
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        gameTestServer {
+            type = "gameTestServer"
+            gameDirectory = file('run/gametest')
+            programArgument "--world"
+            programArgument file("build/gametestworld").absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces', "${project.mod_id},thaumcraft_armor"
+        }
+        extraGameTestServer {
+            type = 'gameTestServer'
+            gameDirectory = file('run/extra-gametest')
+            programArgument '--world'
+            programArgument file('build/extra-gametestworld').absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'bbtt_tc_tests,bbtt_ruin_tests'
+        }
+        golemRuntimeServer {
+            type = 'gameTestServer'
+            gameDirectory = file('run/golem-runtime')
+            programArgument '--world'
+            programArgument file('build/golem-runtime-world').absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'thaumcraft_golem_runtime'
+        }
+        recipeTestServer {
+            type = 'gameTestServer'
+            gameDirectory = file('run/recipe-tests')
+            programArgument '--world'
+            programArgument file('build/recipe-test-world').absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'thaumcraft_recipe_tests'
+        }
+        alchemyAuditServer {
+            type = "gameTestServer"
+            gameDirectory = file('run/alchemy-golems-gametest')
+            programArgument '--world'
+            programArgument file('build/alchemy-audit-world').absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.INFO
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+            sourceSet(sourceSets.gameTest)
+            if (providers.gradleProperty('alchemySmoke').isPresent() || providers.gradleProperty('nodeDevicesSmoke').isPresent() || providers.gradleProperty('auditSmoke').isPresent() || providers.gradleProperty('crucibleSmoke').isPresent()) {
+                sourceSet(sourceSets.smoke)
+            }
+        }
+        if (providers.gradleProperty('forbiddenMagicFixture').isPresent()) {
+            forbiddenmagic { sourceSet(sourceSets.forbiddenMagicFixture) }
+        }
+    }
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+dependencies {
+    compileOnly "maven.modrinth:iris:${iris_version}"
+    implementation "com.github.glitchfiend:TerraBlender-neoforge:${terrablender_version}"
+    implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_credits            : mod_credits,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xmaxerrs', '100000', '-XDshould-stop.ifError=FLOW']
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+tasks.named('runServer') {
+    standardInput = System.in
+}
+
+var prepareOuterLandsTests = tasks.register("prepareOuterLandsTests", Copy) {
+    from "src/gametest/packs/outer_lands"
+    into "build/gametestworld/datapacks/outer_lands"
+}
+
+tasks.named("runGameTestServer") {
+    dependsOn prepareOuterLandsTests
+}
+
+var prepareExtraTests = tasks.register('prepareExtraTests', Copy) {
+    from 'src/gametest/packs/outer_lands'
+    into 'build/extra-gametestworld/datapacks/outer_lands'
+}
+
+tasks.named('runExtraGameTestServer') {
+    dependsOn prepareExtraTests
+    mustRunAfter tasks.named('runGameTestServer')
+}
+
+tasks.register('runAllGameTests') {
+    group = 'verification'
+    description = 'Run the main and additional required GameTest namespaces.'
+    dependsOn tasks.named('runGameTestServer'), tasks.named('runExtraGameTestServer'), tasks.named('runGolemRuntimeServer'), tasks.named('runRecipeTestServer')
+}
+
+var prepareGolemRuntimeTests = tasks.register('prepareGolemRuntimeTests', Copy) {
+    from 'src/gametest/packs/outer_lands'
+    into 'build/golem-runtime-world/datapacks/outer_lands'
+}
+tasks.named('runGolemRuntimeServer') {
+    dependsOn prepareGolemRuntimeTests
+    mustRunAfter tasks.named('runExtraGameTestServer')
+}
+
+var prepareRecipeTests = tasks.register('prepareRecipeTests', Copy) {
+    from 'src/gametest/packs/outer_lands'
+    into 'build/recipe-test-world/datapacks/outer_lands'
+}
+tasks.named('runRecipeTestServer') {
+    dependsOn prepareRecipeTests
+    mustRunAfter tasks.named('runGolemRuntimeServer')
+}
+
+['GameTestServer': 'run/gametest', 'ExtraGameTestServer': 'run/extra-gametest', 'GolemRuntimeServer': 'run/golem-runtime', 'RecipeTestServer': 'run/recipe-tests'].each { runName, directory ->
+    def testLog = layout.projectDirectory.file("${directory}/logs/latest.log").asFile
+    tasks.named("run${runName}") {
+        doFirst { testLog.delete() }
+        doLast {
+            if (!testLog.isFile() || !(testLog.text =~ /All [1-9][0-9]* required tests passed/) || testLog.text =~ /[1-9][0-9]* required tests failed/) {
+                throw new GradleException("${runName} did not finish a successful, nonempty GameTest run")
+            }
+        }
+    }
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('compileGameTestJava'), tasks.named('processGameTestResources')
+}
+
+var prepareAlchemyAuditTests = tasks.register('prepareAlchemyAuditTests', Copy) {
+    from 'src/gametest/packs/outer_lands'
+    into 'build/alchemy-audit-world/datapacks/outer_lands'
+}
+def alchemyAuditLog = layout.projectDirectory.file('run/alchemy-golems-gametest/logs/latest.log').asFile
+tasks.named('runAlchemyAuditServer') {
+    dependsOn prepareAlchemyAuditTests
+    doFirst { alchemyAuditLog.delete() }
+    doLast {
+        if (!alchemyAuditLog.isFile() || !(alchemyAuditLog.text =~ /All [1-9][0-9]* required tests passed/) || alchemyAuditLog.text =~ /[1-9][0-9]* required tests failed/) {
+            throw new GradleException('Alchemy audit did not finish a successful test run')
+        }
+    }
+}

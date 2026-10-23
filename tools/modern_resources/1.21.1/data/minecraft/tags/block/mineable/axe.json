@@ -1,0 +1,107 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:greatwood_fence",
+    "thaumcraft:greatwood_fence_gate",
+    "thaumcraft:greatwood_door",
+    "thaumcraft:greatwood_trapdoor",
+    "thaumcraft:silverwood_fence",
+    "thaumcraft:silverwood_fence_gate",
+    "thaumcraft:silverwood_door",
+    "thaumcraft:silverwood_trapdoor",
+    "thaumcraft:greatwood_wall_sign",
+    "thaumcraft:silverwood_wall_sign",
+    {
+      "id": "thaumcraft:arcane_bellows",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_bore",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_bore_base",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_ear",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_levitator",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_worktable",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:banner",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:deconstruction_table",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_log",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_planks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:hungry_chest",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_crate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:research_table",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:research_table_part",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_knot",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_log",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_planks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:table",
+      "required": false
+    },
+    "thaumcraft:greatwood_hanging_sign",
+    "thaumcraft:greatwood_wall_hanging_sign",
+    "thaumcraft:silverwood_hanging_sign",
+    "thaumcraft:silverwood_wall_hanging_sign"
+  ]
+}

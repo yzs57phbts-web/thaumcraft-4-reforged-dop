@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "deepslate=false": {
+      "model": "thaumcraft:block/cinnabar_ore"
+    },
+    "deepslate=true": {
+      "model": "thaumcraft:block/cinnabar_ore_deepslate"
+    }
+  }
+}

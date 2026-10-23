@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/arcane_bore_base"
+    }
+  }
+}

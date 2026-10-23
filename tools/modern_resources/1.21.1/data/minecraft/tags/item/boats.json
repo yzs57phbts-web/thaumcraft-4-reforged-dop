@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:greatwood_boat",
+    "thaumcraft:silverwood_boat",
+    "thaumcraft:greatwood_chest_boat",
+    "thaumcraft:silverwood_chest_boat"
+  ]
+}

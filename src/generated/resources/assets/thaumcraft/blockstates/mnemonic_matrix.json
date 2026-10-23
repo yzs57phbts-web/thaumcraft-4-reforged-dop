@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/mnemonic_matrix"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "thaumcraft:block/runed_stone_block"
+      }
+    }
+  ]
+}

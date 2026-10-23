@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:native_cinnabar_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_copper_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_gold_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_iron_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_lead_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_silver_cluster",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:native_tin_cluster",
+      "required": false
+    }
+  ]
+}

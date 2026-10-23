@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:emergency_shielding_amulet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:mundane_amulet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:runic_shielding_amulet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:vis_amulet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:vis_stone",
+      "required": false
+    }
+  ]
+}

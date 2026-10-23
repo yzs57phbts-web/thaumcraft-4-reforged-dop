@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:crimson_cult_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_cult_robe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_praetor_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fortress_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:hover_harness",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:robe_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_chestplate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_chestplate",
+      "required": false
+    }
+  ]
+}

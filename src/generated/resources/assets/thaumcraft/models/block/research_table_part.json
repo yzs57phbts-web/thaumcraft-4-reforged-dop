@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/research_table_model"
+  },
+  "render_type": "minecraft:translucent"
+}

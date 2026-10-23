@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "thaumcraft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DamageContainerAccess",
+    "AcceptedDamageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "targets": [
+    "swap"
+  ],
+  "passes": [
+    {
+      "name": "thaumcraft:warp_bloom_color",
+      "intarget": "minecraft:main",
+      "outtarget": "swap"
+    },
+    {
+      "name": "thaumcraft:warp_bloom_add",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

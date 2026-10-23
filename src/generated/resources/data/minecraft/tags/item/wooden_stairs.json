@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:greatwood_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_stairs",
+      "required": false
+    }
+  ]
+}

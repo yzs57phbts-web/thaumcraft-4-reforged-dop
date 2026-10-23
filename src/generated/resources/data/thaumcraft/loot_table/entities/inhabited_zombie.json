@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:entity",
+  "pools": [],
+  "random_sequence": "thaumcraft:entities/inhabited_zombie"
+}

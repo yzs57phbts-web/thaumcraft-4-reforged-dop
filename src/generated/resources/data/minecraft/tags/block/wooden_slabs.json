@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:greatwood_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_slab",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "deepslate=false": {
+      "model": "thaumcraft:block/air_infused_stone"
+    },
+    "deepslate=true": {
+      "model": "thaumcraft:block/air_infused_stone_deepslate"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:model/trunk"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:models/floatycandle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:models/floatycandlestub"
+    },
+    {
+      "type": "thaumcraft:mip_safe",
+      "resource": "thaumcraft:item/focus_pech_depth"
+    },
+    {
+      "type": "thaumcraft:mip_safe",
+      "resource": "thaumcraft:item/focus_primal_depth"
+    },
+    {
+      "type": "thaumcraft:mip_safe",
+      "resource": "thaumcraft:item/focus_portablehole_depth"
+    },
+    {
+      "type": "thaumcraft:mip_safe",
+      "resource": "thaumcraft:item/focus_warding_depth"
+    }
+  ]
+}

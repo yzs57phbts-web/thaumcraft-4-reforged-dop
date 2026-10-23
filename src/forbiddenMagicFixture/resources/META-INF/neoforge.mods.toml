@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="CC0-1.0"
+[[mods]]
+modId="forbiddenmagic"
+version="0.0.0-test-fixture"
+displayName="Forbidden Magic Presence Test Fixture"
+description="TEST ONLY: verifies activation of optional aspects with a real loaded mod ID."

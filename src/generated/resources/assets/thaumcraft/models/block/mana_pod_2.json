@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thaumcraft:block/manapod_stem_1"
+  },
+  "render_type": "minecraft:cutout"
+}

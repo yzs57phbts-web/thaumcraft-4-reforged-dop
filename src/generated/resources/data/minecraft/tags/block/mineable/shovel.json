@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:loot_urn",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "thaumcraft:knowledge_fragment"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "thaumcraft:blocks/glyphed_stone"
+}

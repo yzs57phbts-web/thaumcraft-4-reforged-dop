@@ -1,0 +1,199 @@
+{
+  "variants": {
+    "light=0,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=1,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=2,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=3,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=4,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=5,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=6,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=7,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=8,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=9,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=10,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=11,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=12,part=core": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=0,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=1,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=2,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=3,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=4,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=5,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=6,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=7,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=8,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=9,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=10,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=11,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=12,part=nozzle": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=0,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=1,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=2,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=3,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=4,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=5,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=6,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=7,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=8,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=9,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=10,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=11,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=12,part=frame_alembic": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=0,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=1,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=2,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=3,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=4,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=5,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=6,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=7,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=8,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=9,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=10,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=11,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=12,part=frame_edge": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=0,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=1,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=2,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=3,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=4,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=5,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=6,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=7,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=8,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=9,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=10,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=11,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    },
+    "light=12,part=frame_corner": {
+      "model": "thaumcraft:block/advanced_alchemical_furnace"
+    }
+  }
+}

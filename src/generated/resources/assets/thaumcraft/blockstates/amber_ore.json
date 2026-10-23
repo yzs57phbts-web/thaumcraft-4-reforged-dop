@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "deepslate=false": {
+      "model": "thaumcraft:block/amber_ore"
+    },
+    "deepslate=true": {
+      "model": "thaumcraft:block/amber_ore_deepslate"
+    }
+  }
+}

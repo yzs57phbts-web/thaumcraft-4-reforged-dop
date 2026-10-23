@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "thaumcraft:block/eldritch_portal_block"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:silverwood_planks"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:silverwood_stairs"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "K": {
+      "item": "thaumcraft:silverwood_planks"
+    }
+  },
+  "pattern": [
+    "K  ",
+    "KK ",
+    "KKK"
+  ],
+  "result": {
+    "id": "thaumcraft:silverwood_stairs",
+    "count": 4
+  }
+}

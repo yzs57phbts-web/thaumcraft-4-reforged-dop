@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/mirrorframe2"
+  },
+  "render_type": "minecraft:cutout"
+}

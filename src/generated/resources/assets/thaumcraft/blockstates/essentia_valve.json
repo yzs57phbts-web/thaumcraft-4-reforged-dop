@@ -1,0 +1,115 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1"
+      }
+    },
+    {
+      "when": {
+        "north": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long"
+      }
+    },
+    {
+      "when": {
+        "south": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "south": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "west": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "down": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "down": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "up": "normal"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1",
+        "x": 270
+      }
+    },
+    {
+      "when": {
+        "up": "extended"
+      },
+      "apply": {
+        "model": "thaumcraft:block/essentia_arm_pipe_1_long",
+        "x": 270
+      }
+    },
+    {
+      "apply": {
+        "model": "thaumcraft:block/essentia_core_big"
+      }
+    }
+  ]
+}

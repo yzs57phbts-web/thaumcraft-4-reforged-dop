@@ -1,0 +1,269 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:advanced_alchemical_construct",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:advanced_alchemical_furnace",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:advanced_node_stabilizer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:air_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:alchemical_centrifuge",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:alchemical_construct",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:alchemical_furnace",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:alembic",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:amber_block",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:amber_bricks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:amber_ore",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_rock",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_no_spawn",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_pedestal",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_lamp",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_pedestal",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_spa",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:charged_obsidian_totem",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:compound_recharge_focus",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crucible",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crusted_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:directional_essentia_tube",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:earth_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:entropy_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:essentia_buffer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:essentia_crystallizer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:essentia_reservoir",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:essentia_tube",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:essentia_valve",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:filtered_essentia_tube",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fire_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:flux_scrubber",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:focal_manipulator",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:golem_fetter",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:infernal_furnace",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:infusion_pillar",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:infusion_pillar_top",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:item_grate",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:lamp_of_fertility",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:lamp_of_growth",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:mnemonic_matrix",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:node_stabilizer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:node_transducer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:obsidian_tile",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:obsidian_totem",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:order_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:restricted_essentia_tube",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:runic_matrix",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:tallow_block",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumatorium",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumatorium_top",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_block",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:travel_paving_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:vis_charge_relay",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:vis_relay",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:wand_recharge_pedestal",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:warding_paving_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:water_infused_stone",
+      "required": false
+    }
+  ]
+}

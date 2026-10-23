@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumium_ingot"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumium_nugget"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:thaumium_ingot"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:thaumium_nugget",
+    "count": 9
+  }
+}

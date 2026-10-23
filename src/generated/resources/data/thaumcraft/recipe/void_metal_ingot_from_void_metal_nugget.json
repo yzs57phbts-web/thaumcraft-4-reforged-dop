@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_metal_ingot"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_metal_nugget"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "thaumcraft:void_metal_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "thaumcraft:void_metal_ingot"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/pipe_2",
+    "t": "thaumcraft:block/pipe_2",
+    "a": "thaumcraft:block/pipe_1"
+  },
+  "elements": [
+    {
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        9,
+        16,
+        9
+      ],
+      "faces": {
+        "down": {
+          "texture": "#a"
+        },
+        "up": {
+          "texture": "#a"
+        },
+        "north": {
+          "texture": "#a"
+        },
+        "south": {
+          "texture": "#a"
+        },
+        "west": {
+          "texture": "#a"
+        },
+        "east": {
+          "texture": "#a"
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        6,
+        6
+      ],
+      "to": [
+        10,
+        10,
+        10
+      ],
+      "faces": {
+        "down": {
+          "texture": "#t"
+        },
+        "up": {
+          "texture": "#t"
+        },
+        "north": {
+          "texture": "#t"
+        },
+        "south": {
+          "texture": "#t"
+        },
+        "west": {
+          "texture": "#t"
+        },
+        "east": {
+          "texture": "#t"
+        }
+      }
+    }
+  ]
+}

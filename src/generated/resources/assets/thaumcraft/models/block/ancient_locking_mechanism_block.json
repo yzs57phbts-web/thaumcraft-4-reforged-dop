@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/deco_2",
+    "up": "thaumcraft:block/deco_3",
+    "down": "thaumcraft:block/deco_3",
+    "north": "thaumcraft:block/deco_2",
+    "south": "thaumcraft:block/deco_3",
+    "west": "thaumcraft:block/deco_3",
+    "east": "thaumcraft:block/deco_3"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#down"
+        },
+        "up": {
+          "texture": "#up"
+        },
+        "north": {
+          "texture": "#north"
+        },
+        "south": {
+          "texture": "#south"
+        },
+        "west": {
+          "texture": "#west"
+        },
+        "east": {
+          "texture": "#east"
+        }
+      }
+    }
+  ]
+}

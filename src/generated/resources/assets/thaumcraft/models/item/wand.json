@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "textures": {
+    "particle": "thaumcraft:item/wand_rod_greatwood"
+  },
+  "gui_light": "side"
+}

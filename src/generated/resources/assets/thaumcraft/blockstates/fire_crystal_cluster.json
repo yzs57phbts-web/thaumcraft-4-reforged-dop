@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/fire_crystal_cluster"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:ancient_rock",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_no_spawn",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ancient_stone_pedestal",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crusted_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:golem_fetter",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:obsidian_tile",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:obsidian_totem",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:tallow_block",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_block",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:travel_paving_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:warding_paving_stone",
+      "required": false
+    }
+  ]
+}

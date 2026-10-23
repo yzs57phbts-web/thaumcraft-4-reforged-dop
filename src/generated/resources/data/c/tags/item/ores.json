@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:air_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:amber_ore",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:cinnabar_ore",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:earth_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:entropy_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fire_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:order_infused_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:water_infused_stone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "facing=north,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    },
+    "facing=north,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    },
+    "facing=east,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 90
+    },
+    "facing=east,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 90
+    },
+    "facing=south,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 180
+    },
+    "facing=south,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 180
+    },
+    "facing=west,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 270
+    },
+    "facing=west,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block",
+      "y": 270
+    },
+    "facing=up,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    },
+    "facing=up,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    },
+    "facing=down,part=lower": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    },
+    "facing=down,part=upper": {
+      "model": "thaumcraft:block/ancient_locking_mechanism_block"
+    }
+  }
+}

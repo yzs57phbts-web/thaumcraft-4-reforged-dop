@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:white_tallow_candle"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:yellow_tallow_candle"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dyes/yellow"
+    },
+    {
+      "item": "thaumcraft:white_tallow_candle"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:yellow_tallow_candle"
+  }
+}

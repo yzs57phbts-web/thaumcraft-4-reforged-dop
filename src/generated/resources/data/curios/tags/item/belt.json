@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:focus_pouch",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:kinetic_shielding_girdle",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:mundane_belt",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:runic_shielding_girdle",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumostatic_girdle",
+      "required": false
+    }
+  ]
+}

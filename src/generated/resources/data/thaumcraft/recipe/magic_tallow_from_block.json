@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:magic_tallow"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tallow_block"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:tallow_block"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:magic_tallow",
+    "count": 9
+  }
+}

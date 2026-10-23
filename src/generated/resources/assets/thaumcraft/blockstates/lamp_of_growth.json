@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "facing=down,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=down,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    },
+    "facing=up,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=up,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    },
+    "facing=north,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=north,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    },
+    "facing=south,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=south,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    },
+    "facing=west,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=west,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    },
+    "facing=east,lit=false": {
+      "model": "thaumcraft:block/lamp_of_growth_unlit"
+    },
+    "facing=east,lit=true": {
+      "model": "thaumcraft:block/lamp_of_growth_lit"
+    }
+  }
+}

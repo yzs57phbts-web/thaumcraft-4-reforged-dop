@@ -1,0 +1,19 @@
+gradle.projectsEvaluated {
+    def project = rootProject
+    def fixture = project.sourceSets.create('robeVisualSmoke') {
+        java.srcDir('tools/robe-visual-smoke')
+        resources.srcDir('tools/robe-visual-smoke-resources')
+        compileClasspath += project.sourceSets.main.compileClasspath + project.sourceSets.main.output
+        runtimeClasspath += project.sourceSets.main.runtimeClasspath
+    }
+    project.extensions.getByName('neoForge').mods.create('robe_visual_smoke') {
+        sourceSet(fixture)
+    }
+    project.extensions.getByName('neoForge').runs.getByName('client').with {
+        gameDirectory = project.file('run/robe-visual-smoke')
+        programArgument('--width')
+        programArgument('1600')
+        programArgument('--height')
+        programArgument('1000')
+    }
+}

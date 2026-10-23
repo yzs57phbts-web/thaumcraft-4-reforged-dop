@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:iron_wand_cap"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:wand"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "thaumcraft:iron_wand_cap"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "  I",
+    " S ",
+    "I  "
+  ],
+  "result": {
+    "id": "thaumcraft:wand",
+    "components": {
+      "thaumcraft:wand_parts": {
+        "cap": "iron",
+        "rod": "wood"
+      }
+    }
+  }
+}

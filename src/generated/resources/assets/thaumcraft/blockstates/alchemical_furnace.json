@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "has_vis=false,lit=false": {
+      "model": "thaumcraft:block/alchemical_furnace_false_false"
+    },
+    "has_vis=true,lit=false": {
+      "model": "thaumcraft:block/alchemical_furnace_false_true"
+    },
+    "has_vis=false,lit=true": {
+      "model": "thaumcraft:block/alchemical_furnace_true_false"
+    },
+    "has_vis=true,lit=true": {
+      "model": "thaumcraft:block/alchemical_furnace_true_true"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "registrations": [
+    {
+      "key": "ConfigResearch.RunicAugment0",
+      "expected_sha256": "5bc71d8461c92289b328bfdd01da70446020f28c78ff00b98a0f69ef86c02951",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ConfigResearch.RunicAugment0\", \"RUNICAUGMENTATION\", TcStack.of(\"thaumcraft:robe_chestplate\"), 5, new AspectList().add(Aspect.ARMOR, 16).add(Aspect.MAGIC, 16).add(Aspect.ENERGY, 32), TcIngredient.item(\"thaumcraft:robe_chestplate\"), List.of(TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:salis_mundus\"))));"
+    },
+    {
+      "key": "ConfigResearch.RunicAugment1",
+      "expected_sha256": "0fa5a4fb2600df98d468cfaf79238a15e87f3cc196901a5f76e77b53f76d83ac",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ConfigResearch.RunicAugment1\", \"RUNICAUGMENTATION\", TcStack.of(\"thaumcraft:robe_chestplate\"), 5, new AspectList().add(Aspect.ARMOR, 32).add(Aspect.MAGIC, 32).add(Aspect.ENERGY, 64), TcIngredient.item(\"thaumcraft:robe_chestplate\"), List.of(TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"))));"
+    },
+    {
+      "key": "ConfigResearch.RunicAugment2",
+      "expected_sha256": "72b7959c95e9481ba96a5076b020de643391c9ae2af68946197f4b56dab7f3b9",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ConfigResearch.RunicAugment2\", \"RUNICAUGMENTATION\", TcStack.of(\"thaumcraft:robe_chestplate\"), 6, new AspectList().add(Aspect.ARMOR, 64).add(Aspect.MAGIC, 64).add(Aspect.ENERGY, 128), TcIngredient.item(\"thaumcraft:robe_chestplate\"), List.of(TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"))));"
+    },
+    {
+      "key": "ConfigResearch.RunicAugment3",
+      "expected_sha256": "6547f62918db7e652af2cc19d6b0e78351d061cebfbb8951efe21f580f53d9e3",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ConfigResearch.RunicAugment3\", \"RUNICAUGMENTATION\", TcStack.of(\"thaumcraft:robe_chestplate\"), 6, new AspectList().add(Aspect.ARMOR, 128).add(Aspect.MAGIC, 128).add(Aspect.ENERGY, 256), TcIngredient.item(\"thaumcraft:robe_chestplate\"), List.of(TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"))));"
+    },
+    {
+      "key": "ConfigResearch.RunicAugment4",
+      "expected_sha256": "d6b23709b2b74554103a0ce6d936adb42fb70499100b99ef5ecf45451d8364af",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ConfigResearch.RunicAugment4\", \"RUNICAUGMENTATION\", TcStack.of(\"thaumcraft:robe_chestplate\"), 7, new AspectList().add(Aspect.ARMOR, 256).add(Aspect.MAGIC, 256).add(Aspect.ENERGY, 512), TcIngredient.item(\"thaumcraft:robe_chestplate\"), List.of(TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:salis_mundus\"))));"
+    }
+  ],
+  "research": [
+    {
+      "key": "ALCHEMICALDUPLICATION",
+      "expected_sha256": "50ea5505807b6acbb0639945c19e7099dc038ea8bb24870dee19522c3ea28570",
+      "java": "        new ResearchItem(\"ALCHEMICALDUPLICATION\", \"ALCHEMY\", new AspectList().add(Aspect.MAGIC, 3).add(Aspect.GREED, 3).add(Aspect.CRAFT, 3), -4, 0, 1, ResourceLocation.parse(\"thaumcraft:textures/misc/r_alchmult.png\"))\n            .setPages(\n                ResearchPage.text(\"tc.research_page.ALCHEMICALDUPLICATION.1\"),\n                ResearchPage.crucible(\"AltGunpowder\"),\n                ResearchPage.crucible(\"AltSlime\"),\n                ResearchPage.crucible(\"AltClay\"),\n                ResearchPage.crucible(\"AltGlowstone\"),\n                ResearchPage.crucible(\"AltInk\"),\n                ResearchPage.crucible(\"AltHoneyBottle\"),\n                ResearchPage.crucible(\"AltHoneycomb\")\n            )\n            .setConcealed()\n            .setSecondary()\n            .setParents(\"TALLOW\")\n            .registerResearchItem();"
+    },
+    {
+      "key": "ALCHEMICALMANUFACTURE",
+      "expected_sha256": "7584bcaa0a899d9034b742d2f89bde2c064342d82b4fbf336493f9edba59e1bb",
+      "java": "        new ResearchItem(\"ALCHEMICALMANUFACTURE\", \"ALCHEMY\", new AspectList().add(Aspect.MAGIC, 3).add(Aspect.EXCHANGE, 3).add(Aspect.CRAFT, 3), -5, -2, 1, ResourceLocation.parse(\"thaumcraft:textures/misc/r_alchman.png\"))\n            .setPages(\n                ResearchPage.text(\"tc.research_page.ALCHEMICALMANUFACTURE.1\"),\n                ResearchPage.crucible(\"AltWeb\"),\n                ResearchPage.crucible(\"AltIce\"),\n                ResearchPage.crucible(\"AltGlowInk\"),\n                ResearchPage.crucible(\"AltPoisonousPotato\")\n            )\n            .setConcealed()\n            .setSecondary()\n            .setParents(\"ALCHEMICALDUPLICATION\")\n            .registerResearchItem();"
+    },
+    {
+      "key": "ENTROPICPROCESSING",
+      "expected_sha256": "7ade45886d15263dea796ab8cf91ebdb2d7bc36041c2cd3100a43c82d89c61ee",
+      "java": "        new ResearchItem(\"ENTROPICPROCESSING\", \"ALCHEMY\", new AspectList().add(Aspect.MAGIC, 1).add(Aspect.ENTROPY, 3).add(Aspect.CRAFT, 1), -6, 1, 1, ResourceLocation.parse(\"thaumcraft:textures/misc/r_alchent.png\"))\n            .setPages(\n                ResearchPage.text(\"tc.research_page.ENTROPICPROCESSING.1\"),\n                ResearchPage.crucible(\"AltBonemeal\"),\n                ResearchPage.crucible(\"AltString\"),\n                ResearchPage.crucible(\"AltQuartz\")\n            )\n            .setConcealed()\n            .setSecondary()\n            .setParents(\"ALCHEMICALDUPLICATION\")\n            .registerResearchItem();"
+    },
+    {
+      "key": "JARLABEL",
+      "expected_sha256": "9b695decc68329ecd8f90ecd2b221d01f3ce1315b9ededc359882ce4842f6cad",
+      "java": "        new ResearchItem(\"JARLABEL\", \"ALCHEMY\", new AspectList(), 4, -3, 0, TcStack.of(\"thaumcraft:warded_jar\"))\n            .setPages(\n                ResearchPage.text(\"tc.research_page.JARLABEL.1\"),\n                ResearchPage.arcane(\"WardedJar\"),\n                ResearchPage.text(\"tc.research_page.JARLABEL.2\"),\n                ResearchPage.crafting(\"JarLabel\"),\n                ResearchPage.text(\"tc.research_page.JARLABEL.3\"),\n                ResearchPage.crafting(\"JarLabel0\", \"JarLabel1\", \"JarLabel2\", \"JarLabel3\", \"JarLabel4\", \"JarLabel5\", \"JarLabel6\", \"JarLabel7\", \"JarLabel8\", \"JarLabel9\", \"JarLabel10\", \"JarLabel11\", \"JarLabel12\", \"JarLabel13\", \"JarLabel14\", \"JarLabel15\", \"JarLabel16\", \"JarLabel17\", \"JarLabel18\", \"JarLabel19\", \"JarLabel20\", \"JarLabel21\", \"JarLabel22\", \"JarLabel23\", \"JarLabel24\", \"JarLabel25\", \"JarLabel26\", \"JarLabel27\", \"JarLabel28\", \"JarLabel29\", \"JarLabel30\", \"JarLabel31\", \"JarLabel32\", \"JarLabel33\", \"JarLabel34\", \"JarLabel35\", \"JarLabel36\", \"JarLabel37\", \"JarLabel38\", \"JarLabel39\", \"JarLabel40\", \"JarLabel41\", \"JarLabel42\", \"JarLabel43\", \"JarLabel44\", \"JarLabel45\", \"JarLabel46\", \"JarLabel47\"),\n                ResearchPage.crafting(\"JarLabelNull\")\n            )\n            .setParents(\"DISTILESSENTIA\")\n            .setStub()\n            .setRound()\n            .registerResearchItem();"
+    }
+  ]
+}

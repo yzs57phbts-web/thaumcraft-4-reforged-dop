@@ -1,0 +1,8 @@
+gradle.projectsEvaluated {
+    def project = rootProject
+    project.extensions.getByName('neoForge').runs.getByName('gameTestServer').with {
+        gameDirectory = project.file('run/gametest')
+        systemProperty('neoforge.enabledGameTestNamespaces', 'thaumcraft_armor')
+        programArguments.set(['--world', project.file('build/armor-balance-world').absolutePath])
+    }
+}

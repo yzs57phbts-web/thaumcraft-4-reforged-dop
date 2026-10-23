@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:arcane_stone"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:arcane_stone_bricks"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "thaumcraft:arcane_stone"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "id": "thaumcraft:arcane_stone_bricks",
+    "count": 4
+  }
+}

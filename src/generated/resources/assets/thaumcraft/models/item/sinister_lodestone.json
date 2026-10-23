@@ -1,0 +1,11 @@
+{
+  "parent": "thaumcraft:item/sinister_lodestone_inactive",
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:sinister_lodestone_active": 1
+      },
+      "model": "thaumcraft:item/sinister_lodestone_active"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver_drop"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "thaumcraft:quicksilver_drop"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "thaumcraft:quicksilver"
+  }
+}

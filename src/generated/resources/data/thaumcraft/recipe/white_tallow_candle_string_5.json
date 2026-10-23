@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    " TS",
+    " W "
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:magic_tallow"
+    },
+    "W": {
+      "item": "minecraft:honeycomb"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:white_tallow_candle",
+    "count": 3
+  }
+}

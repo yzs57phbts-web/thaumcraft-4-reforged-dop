@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/magic_mirror"
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/magic_mirror"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/magic_mirror"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/magic_mirror"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/magic_mirror"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/magic_mirror"
+    }
+  }
+}

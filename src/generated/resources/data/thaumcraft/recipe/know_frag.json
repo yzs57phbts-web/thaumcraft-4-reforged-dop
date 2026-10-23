@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:knowledge_fragment"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:research_notes"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "thaumcraft:knowledge_fragment"
+    }
+  },
+  "pattern": [
+    "KKK",
+    "KKK",
+    "KKK"
+  ],
+  "result": {
+    "id": "thaumcraft:research_notes"
+  }
+}

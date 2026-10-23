@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:crimson_cult_greaves",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_cult_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_praetor_greaves",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fortress_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:robe_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_leggings",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_leggings",
+      "required": false
+    }
+  ]
+}

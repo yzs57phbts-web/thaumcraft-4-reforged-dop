@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thaumcraft:block/manashroom"
+  },
+  "render_type": "minecraft:cutout"
+}

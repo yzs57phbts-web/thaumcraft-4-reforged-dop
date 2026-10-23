@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:magical_forest",
+    "thaumcraft:eerie",
+    "thaumcraft:tainted_land",
+    "thaumcraft:eldritch"
+  ]
+}

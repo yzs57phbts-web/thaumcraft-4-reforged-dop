@@ -1,0 +1,1 @@
+Floating candles: original Thaumic Exploration by Flaxbeard; modern port and transfer to TC4. The FloatingCandleBlock/FloatingCandleEntity/CandleRenderer files, floating-candle models and floatycandle/floatycandlestub textures retain the CC-BY-NC-SA-4.0 terms from Thaumic Exploration (LICENSE-FLOATING-CANDLES.txt). Other Thaumcraft content retains its existing license.

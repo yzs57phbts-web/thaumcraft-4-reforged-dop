@@ -1,0 +1,81 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/furnace13",
+    "grate": "thaumcraft:block/furnace13",
+    "eyes": "thaumcraft:block/furnace15",
+    "fire": "minecraft:block/fire_0"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        10.0
+      ],
+      "to": [
+        16,
+        16,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#grate",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        12.8
+      ],
+      "to": [
+        16,
+        16,
+        12.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#eyes",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        14.4
+      ],
+      "to": [
+        16,
+        24,
+        14.4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#fire",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ],
+  "render_type": "minecraft:cutout"
+}

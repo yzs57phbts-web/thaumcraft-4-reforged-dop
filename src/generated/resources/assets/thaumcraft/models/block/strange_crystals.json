@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "thaumcraft:block/crystal"
+  },
+  "render_type": "minecraft:translucent"
+}

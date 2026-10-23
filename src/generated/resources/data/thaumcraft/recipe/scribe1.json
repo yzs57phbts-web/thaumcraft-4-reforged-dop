@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:glass_phial"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:scribing_tools"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:glass_phial"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "tag": "c:dyes/black"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:scribing_tools"
+  }
+}

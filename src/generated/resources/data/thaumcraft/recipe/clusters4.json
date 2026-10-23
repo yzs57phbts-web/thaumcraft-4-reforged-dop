@@ -1,0 +1,57 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_crystal_cluster"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:order_shard"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "item": "thaumcraft:order_shard"
+    },
+    {
+      "item": "thaumcraft:order_shard"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:order_crystal_cluster"
+  }
+}

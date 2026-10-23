@@ -1,0 +1,4 @@
+{
+  "parent": "thaumcraft:block/warded_jar",
+  "render_type": "minecraft:translucent"
+}

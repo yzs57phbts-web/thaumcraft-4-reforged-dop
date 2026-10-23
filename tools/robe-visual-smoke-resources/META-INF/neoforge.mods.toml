@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="robe_visual_smoke"
+version="1"
+displayName="Robe skin overlay regression fixture"

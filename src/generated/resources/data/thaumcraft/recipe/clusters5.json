@@ -1,0 +1,57 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_crystal_cluster"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:entropy_shard"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "item": "thaumcraft:entropy_shard"
+    },
+    {
+      "item": "thaumcraft:entropy_shard"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:entropy_crystal_cluster"
+  }
+}

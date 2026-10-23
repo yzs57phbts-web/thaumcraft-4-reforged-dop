@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:apprentice_ring_air",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:apprentice_ring_earth",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:apprentice_ring_entropy",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:apprentice_ring_fire",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:apprentice_ring_order",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:apprentice_ring_water",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:charged_shielding_ring",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:mundane_ring",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:protection_ring",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:revitalizing_shielding_ring",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:runic_shielding_ring",
+      "required": false
+    }
+  ]
+}

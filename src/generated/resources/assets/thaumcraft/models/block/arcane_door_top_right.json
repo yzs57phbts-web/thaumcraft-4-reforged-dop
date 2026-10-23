@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "thaumcraft:block/adoortop",
+    "top": "thaumcraft:block/adoortop"
+  },
+  "render_type": "minecraft:cutout"
+}

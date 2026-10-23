@@ -1,0 +1,54 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="${mod_license}"
+logoFile="assets/thaumcraft/textures/gui/branding/icon.png"
+
+[[mixins]]
+config="thaumcraft.damage.mixins.json"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="assets/thaumcraft/textures/gui/branding/poster.png"
+logoBlur=true
+authors="${mod_authors}"
+credits="${mod_credits}"
+description='''
+Adding a touch of magic to Minecraft. Unofficial port of Thaumcraft 4.2.3.5.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="terrablender"
+    type="required"
+    versionRange="[4.1.0.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="jei"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="curios"
+    type="required"
+    versionRange="[9.5.1,)"
+    ordering="NONE"
+    side="BOTH"

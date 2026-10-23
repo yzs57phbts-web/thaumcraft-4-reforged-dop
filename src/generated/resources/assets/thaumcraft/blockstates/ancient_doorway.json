@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "thaumcraft:block/ancient_doorway_block"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:ancient_stone_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_slab",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_slab",
+      "required": false
+    }
+  ]
+}

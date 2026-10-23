@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:ancient_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:arcane_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:greatwood_stairs",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:silverwood_stairs",
+      "required": false
+    }
+  ]
+}

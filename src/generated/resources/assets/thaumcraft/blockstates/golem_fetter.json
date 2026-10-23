@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "thaumcraft:block/golem_fetter"
+    },
+    "active=true": {
+      "model": "thaumcraft:block/golem_fetter_active"
+    }
+  }
+}

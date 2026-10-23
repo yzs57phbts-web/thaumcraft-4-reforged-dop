@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:crimson_cult_helm",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_cult_hood",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_praetor_helm",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fortress_helmet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:goggles_of_revealing",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_helmet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_helmet",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_robe_helmet",
+      "required": false
+    }
+  ]
+}

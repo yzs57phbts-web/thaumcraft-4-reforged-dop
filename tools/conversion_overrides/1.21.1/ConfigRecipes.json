@@ -1,0 +1,594 @@
+{
+  "schema": 1,
+  "registrations": [
+    {
+      "key": "JarLabel0",
+      "expected_sha256": "587a72ae81b2719498bf08704da4b8208da7d9a6fea8ccfee002e6eb20c3b3a0",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel0\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.AIR, 0))));"
+    },
+    {
+      "key": "JarLabel1",
+      "expected_sha256": "7841660b204f109fd9542d02189555c778ac4554b9f23f7b9a5ebaa5f41daf78",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel1\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.EARTH, 0))));"
+    },
+    {
+      "key": "JarLabel2",
+      "expected_sha256": "d9ae8e539cae9deba1128c3dacb1d9ab2db4c03de3c9535e3bba12a345858dbd",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel2\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.FIRE, 0))));"
+    },
+    {
+      "key": "JarLabel3",
+      "expected_sha256": "2d74246f8394b179073ab875eb0f42fb2b1c0df074081494724ea36751d04462",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel3\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.WATER, 0))));"
+    },
+    {
+      "key": "JarLabel4",
+      "expected_sha256": "fe8d29d732045764f73acc9383e4ea7504e0054d67ecedb1b14d73fd8bc9d7aa",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel4\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.ORDER, 0))));"
+    },
+    {
+      "key": "JarLabel5",
+      "expected_sha256": "af690a88023620f0268af05b3f29b2d9560489986cfa73e6dbedbd0f50d51452",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel5\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.ENTROPY, 0))));"
+    },
+    {
+      "key": "JarLabel6",
+      "expected_sha256": "9fb840d095962cd69500d80d6772701c949432e3c80f352814e6db8706f996ec",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel6\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.VOID, 0))));"
+    },
+    {
+      "key": "JarLabel7",
+      "expected_sha256": "bb4db09770b52275450b32f969765f1eda4d2c9b26551a90fd80ddd43bfd54da",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel7\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.LIGHT, 0))));"
+    },
+    {
+      "key": "JarLabel8",
+      "expected_sha256": "3503f26d914d47454eeae6481b0a6ffe73f85ba4d397aa264a03df1abb84f4ea",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel8\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.WEATHER, 0))));"
+    },
+    {
+      "key": "JarLabel9",
+      "expected_sha256": "d723738b3c8e208ccead9f48b60d1ecfc17703da2c2b204a09b9f5364cec19a6",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel9\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MOTION, 0))));"
+    },
+    {
+      "key": "JarLabel10",
+      "expected_sha256": "5c78feb95fd93b2249be23ebcb2df8318a995ac374364aa4c05ceb37133429be",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel10\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.COLD, 0))));"
+    },
+    {
+      "key": "JarLabel11",
+      "expected_sha256": "41378dd54838b34760feb4480fd37ee1815a8050575f00cbe29cd9e441598f88",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel11\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.CRYSTAL, 0))));"
+    },
+    {
+      "key": "JarLabel12",
+      "expected_sha256": "e1c5d4c8d953b1dcb60adbf079c6c08ae714bd9ff57d61b9be1926c9b0a9604f",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel12\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.LIFE, 0))));"
+    },
+    {
+      "key": "JarLabel13",
+      "expected_sha256": "c3049c2cf3e6522e71aace5180ec742768c2d458b8d3d45adfdb2740042065d2",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel13\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.POISON, 0))));"
+    },
+    {
+      "key": "JarLabel14",
+      "expected_sha256": "c5df0bc343dc00f6d3b5ba706c70aa0b6deefb327e357dd77e5e20fd7b19838d",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel14\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.ENERGY, 0))));"
+    },
+    {
+      "key": "JarLabel15",
+      "expected_sha256": "56600f405698a34563794e52d0465fb23dfff1cd179ac5f5f818c30d74aed303",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel15\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.EXCHANGE, 0))));"
+    },
+    {
+      "key": "JarLabel16",
+      "expected_sha256": "246fbe418c8ab08abb387368366ecb3495c7d8d9e8f91dad98b65bf66c1b7450",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel16\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.METAL, 0))));"
+    },
+    {
+      "key": "JarLabel17",
+      "expected_sha256": "5e2ea5d71e927f4a6d53e0ca406b4cda7898588058dd89826088a67dbe96d060",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel17\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.DEATH, 0))));"
+    },
+    {
+      "key": "JarLabel18",
+      "expected_sha256": "a17b0e9e28a5a35905a04b66081025eb58a831ec90a3adb7ae6658e69666b6ba",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel18\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.FLIGHT, 0))));"
+    },
+    {
+      "key": "JarLabel19",
+      "expected_sha256": "5874e4f385b3a334eb1d8b6475781e70444f85250fa9d1782d0887c34cf5e7df",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel19\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.DARKNESS, 0))));"
+    },
+    {
+      "key": "JarLabel20",
+      "expected_sha256": "b8893feea442cf8f0028cedd3fed3dc751e516c207ce5c276274384c41e80070",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel20\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.SOUL, 0))));"
+    },
+    {
+      "key": "JarLabel21",
+      "expected_sha256": "44b03cabfd2ae165972cf01859ae5f4737b72ffc3b8f1df633d23db62041e83c",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel21\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.HEAL, 0))));"
+    },
+    {
+      "key": "JarLabel22",
+      "expected_sha256": "0250b616fddd1319d381c2c05d884cb65acd837e8a293713c701c70324c39efd",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel22\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.TRAVEL, 0))));"
+    },
+    {
+      "key": "JarLabel23",
+      "expected_sha256": "94b5f83a8626c63c2a80bec5fba8b820dc4b318051ea37bb179d9697224aff3a",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel23\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.ELDRITCH, 0))));"
+    },
+    {
+      "key": "JarLabel24",
+      "expected_sha256": "c118981e3998427f6a02826f0c932b5db6b1ec996c8894c59bb470471d348fe0",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel24\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MAGIC, 0))));"
+    },
+    {
+      "key": "JarLabel25",
+      "expected_sha256": "30293c5f601923187f0c2bb58a2012592f7e3c0bfa82a81261fdb58904fae544",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel25\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.AURA, 0))));"
+    },
+    {
+      "key": "JarLabel26",
+      "expected_sha256": "90c5a71874c72ae110ffbba34268611e81f1d77126c4d98ed7127d586f66dacc",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel26\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.TAINT, 0))));"
+    },
+    {
+      "key": "JarLabel27",
+      "expected_sha256": "24adaeefbe7ac4d3fbc7d70545e001730411cd8608342cc953921c75ffcfa113",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel27\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.SLIME, 0))));"
+    },
+    {
+      "key": "JarLabel28",
+      "expected_sha256": "f4a1daba998ac341aa7b0e8821845126bd4a8c24f7e7ec0031e3acf8b8e6777a",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel28\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.PLANT, 0))));"
+    },
+    {
+      "key": "JarLabel29",
+      "expected_sha256": "e96d0eabb21fc0100f319c349259e2819e8a3a6445794fb34a0c735bacf441a5",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel29\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.TREE, 0))));"
+    },
+    {
+      "key": "JarLabel30",
+      "expected_sha256": "9a367712e97b37b8c6462753a45181a6427a5ba49f268ee4a1037f6739f84b01",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel30\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.BEAST, 0))));"
+    },
+    {
+      "key": "JarLabel31",
+      "expected_sha256": "68729e1c8eb3168f57ac294574db15ed2076319a72bb5f16f61fd1b65346b226",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel31\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.FLESH, 0))));"
+    },
+    {
+      "key": "JarLabel32",
+      "expected_sha256": "7d354fb136ac3b8d979d91a077be98b471c9aa2664dedb3745585823248ba516",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel32\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.UNDEAD, 0))));"
+    },
+    {
+      "key": "JarLabel33",
+      "expected_sha256": "1726324a43516d8d3afc35e2f7ab8b02be26c19845f9a63f7f7bbd43c1eb20f9",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel33\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MIND, 0))));"
+    },
+    {
+      "key": "JarLabel34",
+      "expected_sha256": "918dfbc94b0ee1eb20741b9c23a53f33f8a06a1cea9ff47d7934df2276c85f49",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel34\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.SENSES, 0))));"
+    },
+    {
+      "key": "JarLabel35",
+      "expected_sha256": "bed18ae50025350cb52f81744a4236e95740dcdecfaa56b6c32c42e3b4af4827",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel35\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MAN, 0))));"
+    },
+    {
+      "key": "JarLabel36",
+      "expected_sha256": "7efab70ff169d0cde0f9d2fc4b7e8f4d98fcaf375830c2a752395abefd695741",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel36\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.CROP, 0))));"
+    },
+    {
+      "key": "JarLabel37",
+      "expected_sha256": "e684775f2a14404a2712ee8ea9a7a9b1fd94407550fa35b2a79eff9d50fd3745",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel37\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MINE, 0))));"
+    },
+    {
+      "key": "JarLabel38",
+      "expected_sha256": "16c047af2f2f05649fca7579243d869d6a9957df205f2b12050835e505795c1d",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel38\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.TOOL, 0))));"
+    },
+    {
+      "key": "JarLabel39",
+      "expected_sha256": "2daf210922d6f92716c5848a03fe192833ad477185283ebcd13f735b68952e5e",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel39\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.HARVEST, 0))));"
+    },
+    {
+      "key": "JarLabel40",
+      "expected_sha256": "e9e9a835a79e0bf0c63b93fd74b3444a876dfadc48323e3571ff798e1627894a",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel40\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.WEAPON, 0))));"
+    },
+    {
+      "key": "JarLabel41",
+      "expected_sha256": "f141471b900988f4b61cba564a4ef7ffb0026a7dfd51a8e3b2a327e4dca4d8e3",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel41\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.ARMOR, 0))));"
+    },
+    {
+      "key": "JarLabel42",
+      "expected_sha256": "e982d7a4619226146d44578725742e18f0c215ae133daf3ca27bda81a71e59b1",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel42\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.HUNGER, 0))));"
+    },
+    {
+      "key": "JarLabel43",
+      "expected_sha256": "369ca2491c769871ebed886dde99870d999166c81a7f6875cb0ba920d103bf0c",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel43\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.GREED, 0))));"
+    },
+    {
+      "key": "JarLabel44",
+      "expected_sha256": "b1b74e89115ba26e1ae6eb7ebb643bc850c705c57104fd03ed3905463418dedb",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel44\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.CRAFT, 0))));"
+    },
+    {
+      "key": "JarLabel45",
+      "expected_sha256": "241672d73c3cd184cc4955d07d0388c257b2a0e9368b4155425ac6ad8f458111",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel45\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.CLOTH, 0))));"
+    },
+    {
+      "key": "JarLabel46",
+      "expected_sha256": "92231724d48f966a9e7f0a584b03417efd304624217bf6c96c2a6dedbd6be7dd",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel46\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.MECHANISM, 0))));"
+    },
+    {
+      "key": "JarLabel47",
+      "expected_sha256": "b56cf532694cde5651e9c590454ca904ef31f40fc35ae2f38e8575b4e153b7b9",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabel47\", \"\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.withAspects(\"thaumcraft:jar_label\", 1, new AspectList().add(Aspect.TRAP, 0))));"
+    },
+    {
+      "key": "JarLabelNull",
+      "expected_sha256": "5521935072125b061ad467d62505848e14b0cdc71d752ee315d2388c7b599775",
+      "java": "        TcRecipes.register(new CraftingRecipeRef(\"JarLabelNull\", \"JARLABEL\", ResourceLocation.parse(\"thaumcraft:jar_label_aspect\"), TcStack.of(\"thaumcraft:jar_label\")));"
+    },
+    {
+      "key": "Banner_0",
+      "expected_sha256": "4c6960edae2a70183b492df9a453ba6777c4d8e66ff4ca88dd522f1e1c50506f",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_0\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"white\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:white_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_1",
+      "expected_sha256": "0d216bbcc3c51993f2982812bf5d30147cbcecab127f2845c4cfc882aedfe750",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_1\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"orange\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:orange_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_2",
+      "expected_sha256": "85b7ec9a5d0894d4dde7de19f4c78b8d7dc2dcce0b0cbe89e9f836c1cd8b456d",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_2\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"magenta\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:magenta_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_3",
+      "expected_sha256": "b2974528a86391cb16ecfcccfbb921bf12c7bb8ac81884bfa4b7ab99c3c6d1be",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_3\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"light_blue\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:light_blue_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_4",
+      "expected_sha256": "e149b02fb82f1dc6be0cff11b7c5f876db164f9a31b507a1feea68f996b65125",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_4\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"yellow\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:yellow_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_5",
+      "expected_sha256": "6688ccf89669673416ad2150238c3a45a40d6ef7ad301ef881908d779bf51a04",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_5\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"lime\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:lime_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_6",
+      "expected_sha256": "528fbe9edb1d20800a9bafd0e496064cf704fe2ee7bedf9be05de6f8f7e6763e",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_6\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"pink\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:pink_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_7",
+      "expected_sha256": "72324a22be155d179199edaa32d1188be90cc2c2198b00b067c0b3295fe41848",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_7\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"gray\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:gray_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_8",
+      "expected_sha256": "9ce9817d3575c82a34b04225a745effb0dcd12dec8cc71e386e1632155acd203",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_8\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"light_gray\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:light_gray_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_9",
+      "expected_sha256": "c39202cf82add010f9a3b025f5974db531f401d86f2a0dfbb52aa2b534bea4f9",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_9\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"cyan\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:cyan_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_10",
+      "expected_sha256": "ee043ec60f14a1672d4be0076cc774fcf5bd977197b738c5499f48cdf90e67f3",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_10\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"purple\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:purple_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_11",
+      "expected_sha256": "5c96db843325a6517f29e075c108fb63450cac2c35fb54eab2bbd72fe287827f",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_11\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"blue\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:blue_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_12",
+      "expected_sha256": "f5db5ccdb6fca0dc82405a337826ff3d10156e2606c634783fe5d9aa52613860",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_12\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"brown\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:brown_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_13",
+      "expected_sha256": "463f097211e265469f4ad1575c783c4d2f1134fe4a55f9e95fd66c4e0327959d",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_13\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"green\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:green_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_14",
+      "expected_sha256": "8d7dde127c15048e7f552d3aff2ddd3a8f58e61b7fe1c386d88ba4f9de360ee8",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_14\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"red\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:red_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "Banner_15",
+      "expected_sha256": "e3a35a46f209daaa8ab6c1f79fa5883d6cce9142de7edc079c8dad090e4328d5",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"Banner_15\", \"BANNERS\", TcStack.withData(\"thaumcraft:banner\", 1, Map.of(\"color\", \"black\")), new AspectList().add(Aspect.WATER, 5).add(Aspect.EARTH, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.item(\"thaumcraft:greatwood_slab\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:black_banner\"), TcIngredient.EMPTY, TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:greatwood_fence\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "ArcaneLamp",
+      "expected_sha256": "4e4799b35d575eb980acf33dc4d29a5111be369e8604154b41b58a67c917114f",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"ArcaneLamp\", \"ARCANELAMP\", TcStack.of(\"thaumcraft:arcane_lamp\"), new AspectList().add(Aspect.FIRE, 8).add(Aspect.AIR, 8).add(Aspect.WATER, 4).add(Aspect.ENTROPY, 4), 3, 3, List.of(TcIngredient.EMPTY, TcIngredient.item(\"minecraft:daylight_detector\"), TcIngredient.EMPTY, TcIngredient.item(\"minecraft:lantern\"), TcIngredient.item(\"thaumcraft:amber_block\"), TcIngredient.item(\"minecraft:lantern\"), TcIngredient.EMPTY, TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.EMPTY)));"
+    },
+    {
+      "key": "ArcaneEar",
+      "expected_sha256": "bfa0c5ade6c70fbe0bf1eb861be457e85cbebd6cad3c4198c7e81ee9919d7e91",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"ArcaneEar\", \"ARCANEEAR\", TcStack.of(\"thaumcraft:arcane_ear\"), new AspectList().add(Aspect.AIR, 10).add(Aspect.ORDER, 10), 3, 3, List.of(TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:sculk_shrieker\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"thaumcraft:zombie_brain\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"minecraft:redstone\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"))));"
+    },
+    {
+      "key": "FocusFrost",
+      "expected_sha256": "3a809845614ae4081bb7158a5e40e0761e812212042d77dfcb1ad8665037624e",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"FocusFrost\", \"FOCUSFROST\", TcStack.of(\"thaumcraft:focus_frost\"), new AspectList().add(Aspect.WATER, 10).add(Aspect.ORDER, 10).add(Aspect.ENTROPY, 10), 3, 3, List.of(TcIngredient.item(\"thaumcraft:water_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:water_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"minecraft:powder_snow_bucket\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:water_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:water_shard\"))));"
+    },
+    {
+      "key": "FocusShock",
+      "expected_sha256": "2a8485b02c8ad64228986d6073ca21c9ae69a12fed81941d953239f350df9bf5",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"FocusShock\", \"FOCUSSHOCK\", TcStack.of(\"thaumcraft:focus_shock\"), new AspectList().add(Aspect.AIR, 10).add(Aspect.ORDER, 10).add(Aspect.ENTROPY, 10), 3, 3, List.of(TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"minecraft:copper_ingot\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:air_shard\"))));"
+    },
+    {
+      "key": "FocusPouch",
+      "expected_sha256": "e3953f1e9725ef45cd267c0df295b968bde22cbb71e3482964073b8ca7e5f4c3",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"FocusPouch\", \"FOCUSPOUCH\", TcStack.of(\"thaumcraft:focus_pouch\"), new AspectList().add(Aspect.EARTH, 10).add(Aspect.ORDER, 10).add(Aspect.ENTROPY, 10), 3, 3, List.of(TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"thaumcraft:mundane_belt\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:rabbit_hide\"), TcIngredient.item(\"minecraft:rabbit_hide\"), TcIngredient.item(\"minecraft:rabbit_hide\"))));"
+    },
+    {
+      "key": "ArcaneBoreBase",
+      "expected_sha256": "74295481c04a92bf5b78a45d712b39b9bfcc40275db363e50e111ce1c6a51c5b",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"ArcaneBoreBase\", \"ARCANEBORE\", TcStack.of(\"thaumcraft:arcane_bore_base\"), new AspectList().add(Aspect.AIR, 10).add(Aspect.ORDER, 10), 3, 3, List.of(TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:stonecutter\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"))));"
+    },
+    {
+      "key": "HungryChest",
+      "expected_sha256": "0dd3ff7a83446a0980887505362ec33fcbfdc519a7616a6f8b0a15784f2246b3",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"HungryChest\", \"HUNGRYCHEST\", TcStack.of(\"thaumcraft:hungry_chest\"), new AspectList().add(Aspect.AIR, 5).add(Aspect.ORDER, 3).add(Aspect.ENTROPY, 3), 3, 3, List.of(TcIngredient.tag(\"minecraft:planks\"), TcIngredient.tag(\"minecraft:wooden_trapdoors\"), TcIngredient.tag(\"minecraft:planks\"), TcIngredient.tag(\"minecraft:planks\"), TcIngredient.EMPTY, TcIngredient.tag(\"minecraft:planks\"), TcIngredient.tag(\"minecraft:planks\"), TcIngredient.tag(\"minecraft:planks\"), TcIngredient.tag(\"minecraft:planks\"))));"
+    },
+    {
+      "key": "AlchemyFurnace",
+      "expected_sha256": "2a043ede9368e36ad0c68ec96d0d5c58e7d8faf2c00120000bd9d36481a7fc82",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"AlchemyFurnace\", \"DISTILESSENTIA\", TcStack.of(\"thaumcraft:alchemical_furnace\"), new AspectList().add(Aspect.FIRE, 5).add(Aspect.WATER, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"thaumcraft:crucible\"), TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"minecraft:blast_furnace\"), TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"thaumcraft:arcane_stone\"), TcIngredient.item(\"thaumcraft:arcane_stone\"))));"
+    },
+    {
+      "key": "AlchemicalConstruct",
+      "expected_sha256": "3888b89f7b0d96858e45a8f336e9c71c3fef2e167d1cb8cdd3c6c534c7806b91",
+      "java": "        TcRecipes.register(new ShapedArcaneRecipe(\"AlchemicalConstruct\", \"DISTILESSENTIA\", TcStack.of(\"thaumcraft:alchemical_construct\"), new AspectList().add(Aspect.WATER, 5).add(Aspect.ORDER, 5), 3, 3, List.of(TcIngredient.item(\"thaumcraft:essentia_valve\"), TcIngredient.item(\"thaumcraft:essentia_tube\"), TcIngredient.item(\"thaumcraft:vis_filter\"), TcIngredient.item(\"thaumcraft:essentia_tube\"), TcIngredient.item(\"minecraft:copper_block\"), TcIngredient.item(\"thaumcraft:essentia_tube\"), TcIngredient.item(\"thaumcraft:vis_filter\"), TcIngredient.item(\"thaumcraft:essentia_tube\"), TcIngredient.item(\"thaumcraft:essentia_valve\"))));"
+    },
+    {
+      "key": "FocusHellbat",
+      "expected_sha256": "442928acd8a598da6bfa8888189dbd2b58d6e832ef3a866b93711d43f9040707",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"FocusHellbat\", \"FOCUSHELLBAT\", TcStack.of(\"thaumcraft:focus_nine_hells\"), 3, new AspectList().add(Aspect.FIRE, 25).add(Aspect.AIR, 15).add(Aspect.BEAST, 15).add(Aspect.ENTROPY, 25), TcIngredient.item(\"minecraft:magma_cream\"), List.of(TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:fire_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:quartz\"), TcIngredient.item(\"thaumcraft:entropy_shard\"), TcIngredient.item(\"minecraft:magma_block\"), TcIngredient.item(\"minecraft:nether_wart_block\"))));"
+    },
+    {
+      "key": "WandPedFocus",
+      "expected_sha256": "7118970b6e4229070ba28a1cc28e999a26b9a92a411b30dd3e67b5ce5fee2f01",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"WandPedFocus\", \"WANDPEDFOC\", TcStack.of(\"thaumcraft:compound_recharge_focus\"), 4, new AspectList().add(Aspect.ORDER, 10).add(Aspect.MAGIC, 15).add(Aspect.EXCHANGE, 10), TcIngredient.item(\"minecraft:comparator\"), List.of(TcIngredient.item(\"minecraft:lightning_rod\"), TcIngredient.item(\"thaumcraft:vis_filter\"), TcIngredient.item(\"minecraft:lightning_rod\"), TcIngredient.item(\"thaumcraft:vis_filter\"), TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"thaumcraft:vis_filter\"), TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"thaumcraft:vis_filter\"))));"
+    },
+    {
+      "key": "JarBrain",
+      "expected_sha256": "c4be0fc16d7318fbf012b0dfbdab974fc6650fce21b889e86a774cb582632638",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"JarBrain\", \"JARBRAIN\", TcStack.of(\"thaumcraft:brain_jar\"), 4, new AspectList().add(Aspect.MIND, 10).add(Aspect.SENSES, 10).add(Aspect.UNDEAD, 20), TcIngredient.item(\"thaumcraft:warded_jar\"), List.of(TcIngredient.item(\"thaumcraft:zombie_brain\"), TcIngredient.item(\"minecraft:spider_eye\"), TcIngredient.item(\"minecraft:water_bucket\"), TcIngredient.item(\"minecraft:spider_eye\"), TcIngredient.item(\"minecraft:honey_bottle\"), TcIngredient.item(\"minecraft:honey_bottle\"))));"
+    },
+    {
+      "key": "HoverHarness",
+      "expected_sha256": "f04745bd8be697c4762cdae854c2888ac86a3b5008f25439a34c4ae32a7e22af",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"HoverHarness\", \"HOVERHARNESS\", TcStack.of(\"thaumcraft:hover_harness\"), 6, new AspectList().add(Aspect.FLIGHT, 32).add(Aspect.ENERGY, 32).add(Aspect.MECHANISM, 32).add(Aspect.TRAVEL, 16), TcIngredient.item(\"minecraft:leather_chestplate\"), List.of(TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:comparator\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:wind_charge\"), TcIngredient.item(\"minecraft:wind_charge\"), TcIngredient.item(\"minecraft:wind_charge\"))));"
+    },
+    {
+      "key": "RunicAmulet",
+      "expected_sha256": "2089d7bc1cdd4e1722e674b0f52165dc5fa93fba41d15f755cd3bcdde301d1ae",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"RunicAmulet\", \"RUNICARMOR\", TcStack.of(\"thaumcraft:runic_shielding_amulet\"), 4, new AspectList().add(Aspect.ARMOR, 20).add(Aspect.MAGIC, 35).add(Aspect.ENERGY, 35), TcIngredient.item(\"thaumcraft:mundane_amulet\"), List.of(TcIngredient.item(\"thaumcraft:primal_charm\"), TcIngredient.item(\"thaumcraft:amber\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:scribing_tools\"), TcIngredient.item(\"minecraft:shield\"), TcIngredient.item(\"minecraft:shield\"))));"
+    },
+    {
+      "key": "RunicRing",
+      "expected_sha256": "5814599528bd6464b5ce3fe73305b02e8938c8a0cf8cdd41e898c57be5978253",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"RunicRing\", \"RUNICARMOR\", TcStack.of(\"thaumcraft:runic_shielding_ring\"), 3, new AspectList().add(Aspect.ARMOR, 10).add(Aspect.MAGIC, 25).add(Aspect.ENERGY, 25), TcIngredient.item(\"thaumcraft:mundane_ring\"), List.of(TcIngredient.item(\"thaumcraft:primal_charm\"), TcIngredient.item(\"thaumcraft:amber\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:scribing_tools\"), TcIngredient.item(\"minecraft:shield\"))));"
+    },
+    {
+      "key": "RunicGirdle",
+      "expected_sha256": "1b42b4c4a4dc9d83ef3114f884160ad117edb39245af02b9fc88a77c67f3f658",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"RunicGirdle\", \"RUNICARMOR\", TcStack.of(\"thaumcraft:runic_shielding_girdle\"), 4, new AspectList().add(Aspect.ARMOR, 30).add(Aspect.MAGIC, 50).add(Aspect.ENERGY, 50), TcIngredient.item(\"thaumcraft:mundane_belt\"), List.of(TcIngredient.item(\"thaumcraft:primal_charm\"), TcIngredient.item(\"thaumcraft:amber\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:nitor\"), TcIngredient.item(\"thaumcraft:scribing_tools\"), TcIngredient.item(\"minecraft:shield\"))));"
+    },
+    {
+      "key": "ElementalAxe",
+      "expected_sha256": "415de2ef23d6d8690820642a3a2e67fba04f29a28536fd9db63c03d5773cca8f",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ElementalAxe\", \"ELEMENTALAXE\", TcStack.of(\"thaumcraft:elemental_axe\"), 1, new AspectList().add(Aspect.WATER, 16).add(Aspect.TREE, 8), TcIngredient.item(\"thaumcraft:thaumium_axe\"), List.of(TcIngredient.item(\"thaumcraft:water_shard\"), TcIngredient.item(\"thaumcraft:water_shard\"), TcIngredient.item(\"minecraft:heart_of_the_sea\"), TcIngredient.item(\"thaumcraft:greatwood_log\"))));"
+    },
+    {
+      "key": "ElementalPick",
+      "expected_sha256": "a0aaff0adeed3f8adf9143f01c5bcc01387b9698c21f7d13d4a6240fa2e03c74",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ElementalPick\", \"ELEMENTALPICK\", TcStack.of(\"thaumcraft:elemental_pickaxe\"), 1, new AspectList().add(Aspect.FIRE, 8).add(Aspect.MINE, 8).add(Aspect.SENSES, 8), TcIngredient.item(\"thaumcraft:thaumium_pickaxe\"), List.of(TcIngredient.item(\"thaumcraft:fire_shard\"), TcIngredient.item(\"thaumcraft:fire_shard\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:greatwood_log\"), TcIngredient.item(\"minecraft:granite\"), TcIngredient.item(\"minecraft:diorite\"), TcIngredient.item(\"minecraft:tuff\"), TcIngredient.item(\"minecraft:dripstone_block\"))));"
+    },
+    {
+      "key": "ElementalSword",
+      "expected_sha256": "3ce7da3d1199e4a2886c334e3c2224c7bb1410da1cf3214c0b8ade5ce8ea3e73",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ElementalSword\", \"ELEMENTALSWORD\", TcStack.of(\"thaumcraft:elemental_sword\"), 1, new AspectList().add(Aspect.AIR, 8).add(Aspect.MOTION, 8).add(Aspect.ENERGY, 8), TcIngredient.item(\"thaumcraft:thaumium_sword\"), List.of(TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"minecraft:wind_charge\"), TcIngredient.item(\"thaumcraft:greatwood_log\"))));"
+    },
+    {
+      "key": "ElementalShovel",
+      "expected_sha256": "1977c0f5d8332c9bc5ac45c849bda69ea1f3ad104cf22e1add4bf922a5940fe8",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ElementalShovel\", \"ELEMENTALSHOVEL\", TcStack.of(\"thaumcraft:elemental_shovel\"), 1, new AspectList().add(Aspect.EARTH, 16).add(Aspect.CRAFT, 8), TcIngredient.item(\"thaumcraft:thaumium_shovel\"), List.of(TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"thaumcraft:greatwood_log\"), TcIngredient.item(\"minecraft:packed_mud\"), TcIngredient.item(\"minecraft:packed_mud\"), TcIngredient.item(\"minecraft:packed_mud\"), TcIngredient.item(\"minecraft:packed_mud\"))));"
+    },
+    {
+      "key": "ElementalHoe",
+      "expected_sha256": "a6af40e71eed0f819551b7e07deaaab811a382fd1173ce943bed25a7ac57012f",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ElementalHoe\", \"ELEMENTALHOE\", TcStack.of(\"thaumcraft:elemental_hoe\"), 1, new AspectList().add(Aspect.HARVEST, 8).add(Aspect.PLANT, 8).add(Aspect.EARTH, 8), TcIngredient.item(\"thaumcraft:thaumium_hoe\"), List.of(TcIngredient.item(\"thaumcraft:order_shard\"), TcIngredient.item(\"thaumcraft:entropy_shard\"), TcIngredient.item(\"minecraft:pitcher_plant\"), TcIngredient.item(\"thaumcraft:greatwood_log\"))));"
+    },
+    {
+      "key": "BootsTraveller",
+      "expected_sha256": "d4e79a769d195d487c0f27dad8e8489524273cd58b425f01a97e86989a06c4da",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"BootsTraveller\", \"BOOTSTRAVELLER\", TcStack.of(\"thaumcraft:boots_traveller\"), 1, new AspectList().add(Aspect.FLIGHT, 25).add(Aspect.TRAVEL, 25), TcIngredient.item(\"minecraft:leather_boots\"), List.of(TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"minecraft:feather\"), TcIngredient.anyOf(TcIngredient.item(\"minecraft:cod\"), TcIngredient.item(\"minecraft:salmon\"), TcIngredient.item(\"minecraft:tropical_fish\"), TcIngredient.item(\"minecraft:pufferfish\")), TcIngredient.item(\"minecraft:wind_charge\"), TcIngredient.item(\"minecraft:wind_charge\"))));"
+    },
+    {
+      "key": "ArcaneBore",
+      "expected_sha256": "4a04d82ad65f5f4642973626f3a76616610ce0f9bb8455326d1a2be48957acc0",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ArcaneBore\", \"ARCANEBORE\", TcStack.of(\"thaumcraft:arcane_bore\"), 4, new AspectList().add(Aspect.ENERGY, 16).add(Aspect.MINE, 32).add(Aspect.MECHANISM, 32).add(Aspect.VOID, 16).add(Aspect.MOTION, 16), TcIngredient.item(\"minecraft:piston\"), List.of(TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"thaumcraft:greatwood_planks\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:diamond_pickaxe\"), TcIngredient.item(\"minecraft:diamond_shovel\"), TcIngredient.item(\"thaumcraft:air_shard\"), TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"minecraft:amethyst_shard\"))));"
+    },
+    {
+      "key": "TravelTrunk",
+      "expected_sha256": "7cf1770b9d210c4544275d08d4aff260775874785b3259fc4d367cb0a8a12943",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"TravelTrunk\", \"TRAVELTRUNK\", TcStack.of(\"thaumcraft:traveling_trunk\"), 3, new AspectList().add(Aspect.MOTION, 4).add(Aspect.SOUL, 4).add(Aspect.TRAVEL, 4).add(Aspect.VOID, 16), TcIngredient.item(\"thaumcraft:hungry_chest\"), List.of(TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:armor_stand\"), TcIngredient.item(\"thaumcraft:wood_golem\"), TcIngredient.item(\"minecraft:armor_stand\"))));"
+    },
+    {
+      "key": "LampGrowth",
+      "expected_sha256": "456a5e7df69fcb00569f4cb4aad9e84d1545b5f3d36489bf856d5809690fde5a",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"LampGrowth\", \"LAMPGROWTH\", TcStack.of(\"thaumcraft:lamp_of_growth\"), 4, new AspectList().add(Aspect.PLANT, 16).add(Aspect.LIGHT, 8).add(Aspect.LIFE, 16), TcIngredient.item(\"thaumcraft:arcane_lamp\"), List.of(TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:bone_meal\"), TcIngredient.item(\"thaumcraft:earth_shard\"), TcIngredient.item(\"minecraft:torchflower\"), TcIngredient.item(\"minecraft:bone_meal\"), TcIngredient.item(\"thaumcraft:earth_shard\"))));"
+    },
+    {
+      "key": "LampFertility",
+      "expected_sha256": "c281fd1eecb36fc8c7678fc60934116d9139363545f72f3b4442fcb317fccc6f",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"LampFertility\", \"LAMPFERTILITY\", TcStack.of(\"thaumcraft:lamp_of_fertility\"), 4, new AspectList().add(Aspect.BEAST, 16).add(Aspect.LIFE, 16).add(Aspect.LIGHT, 8), TcIngredient.item(\"thaumcraft:arcane_lamp\"), List.of(TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:wheat\"), TcIngredient.item(\"thaumcraft:fire_shard\"), TcIngredient.item(\"minecraft:torchflower\"), TcIngredient.item(\"minecraft:carrot\"), TcIngredient.item(\"thaumcraft:fire_shard\"))));"
+    },
+    {
+      "key": "ThaumiumFortressHelm",
+      "expected_sha256": "33e8fb0c67e663b95b3d4efc5812ce1d19c6d361ded92135a197102bcabfd83b",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ThaumiumFortressHelm\", \"ARMORFORTRESS\", TcStack.of(\"thaumcraft:fortress_helmet\"), 3, new AspectList().add(Aspect.METAL, 24).add(Aspect.ARMOR, 16).add(Aspect.MAGIC, 16), TcIngredient.item(\"thaumcraft:thaumium_helmet\"), List.of(TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:turtle_scute\"))));"
+    },
+    {
+      "key": "ThaumiumFortressChest",
+      "expected_sha256": "ad699c15930b0e99d762276532753f8388720a88f32cdf15403171630c977c36",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ThaumiumFortressChest\", \"ARMORFORTRESS\", TcStack.of(\"thaumcraft:fortress_chestplate\"), 3, new AspectList().add(Aspect.METAL, 24).add(Aspect.ARMOR, 24).add(Aspect.MAGIC, 16), TcIngredient.item(\"thaumcraft:thaumium_chestplate\"), List.of(TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:leather\"), new TcIngredient.Reusable(TcIngredient.anyOf(TcIngredient.item(\"minecraft:sentry_armor_trim_smithing_template\"))))));"
+    },
+    {
+      "key": "ThaumiumFortressLegs",
+      "expected_sha256": "7c24efaaf85430301ff32b17ce3346114134099d072fc1378bb41a57230cf00c",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"ThaumiumFortressLegs\", \"ARMORFORTRESS\", TcStack.of(\"thaumcraft:fortress_leggings\"), 3, new AspectList().add(Aspect.METAL, 24).add(Aspect.ARMOR, 20).add(Aspect.MAGIC, 16), TcIngredient.item(\"thaumcraft:thaumium_leggings\"), List.of(TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:leather\"), new TcIngredient.Reusable(TcIngredient.anyOf(TcIngredient.item(\"minecraft:dune_armor_trim_smithing_template\"), TcIngredient.item(\"minecraft:coast_armor_trim_smithing_template\"), TcIngredient.item(\"minecraft:wild_armor_trim_smithing_template\"))))));"
+    },
+    {
+      "key": "VoidRobeHelm",
+      "expected_sha256": "dd326fd809ef26dff33633fb1817e6df8e93f64948211c196ceb22b25e78c649",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"VoidRobeHelm\", \"ARMORVOIDFORTRESS\", TcStack.of(\"thaumcraft:void_robe_helmet\"), 6, new AspectList().add(Aspect.METAL, 16).add(Aspect.SENSES, 16).add(Aspect.ARMOR, 16).add(Aspect.CLOTH, 16).add(Aspect.MAGIC, 16).add(Aspect.ELDRITCH, 16).add(Aspect.VOID, 16), TcIngredient.item(\"thaumcraft:void_helmet\"), List.of(TcIngredient.item(\"thaumcraft:goggles_of_revealing\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"minecraft:phantom_membrane\"), TcIngredient.item(\"minecraft:phantom_membrane\"))));"
+    },
+    {
+      "key": "VoidRobeChest",
+      "expected_sha256": "92a756b71520948819c345e6dac30b5e1201610f00ece341eb7acacec088f19e",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"VoidRobeChest\", \"ARMORVOIDFORTRESS\", TcStack.of(\"thaumcraft:void_robe_chestplate\"), 6, new AspectList().add(Aspect.METAL, 24).add(Aspect.ARMOR, 24).add(Aspect.CLOTH, 24).add(Aspect.MAGIC, 16).add(Aspect.ELDRITCH, 16).add(Aspect.VOID, 24), TcIngredient.item(\"thaumcraft:void_chestplate\"), List.of(TcIngredient.item(\"thaumcraft:robe_chestplate\"), TcIngredient.item(\"thaumcraft:void_metal_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:phantom_membrane\"), new TcIngredient.Reusable(TcIngredient.anyOf(TcIngredient.item(\"minecraft:eye_armor_trim_smithing_template\"), TcIngredient.item(\"minecraft:ward_armor_trim_smithing_template\"))))));"
+    },
+    {
+      "key": "VoidRobeLegs",
+      "expected_sha256": "f129854b4588f8e32a6c68c158237e0561aaeebf845425b184f1f4fea9efc3f3",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"VoidRobeLegs\", \"ARMORVOIDFORTRESS\", TcStack.of(\"thaumcraft:void_robe_leggings\"), 6, new AspectList().add(Aspect.METAL, 20).add(Aspect.ARMOR, 20).add(Aspect.CLOTH, 20).add(Aspect.MAGIC, 16).add(Aspect.ELDRITCH, 16).add(Aspect.VOID, 20), TcIngredient.item(\"thaumcraft:void_leggings\"), List.of(TcIngredient.item(\"thaumcraft:robe_leggings\"), TcIngredient.item(\"thaumcraft:void_metal_ingot\"), TcIngredient.item(\"thaumcraft:thaumium_ingot\"), TcIngredient.item(\"thaumcraft:salis_mundus\"), TcIngredient.item(\"thaumcraft:enchanted_fabric\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:phantom_membrane\"), TcIngredient.item(\"minecraft:phantom_membrane\"))));"
+    },
+    {
+      "key": "HelmGoggles",
+      "expected_sha256": "1605d366e61869796d7e1ccc8a0b56884b14fbb2ad69812d6f09abc3d6434ada",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"HelmGoggles\", \"HELMGOGGLES\", TcStack.withData(\"thaumcraft:fortress_helmet\", 1, Map.of(\"goggles\", \"1\")), 5, new AspectList().add(Aspect.SENSES, 32).add(Aspect.AURA, 16).add(Aspect.ARMOR, 16), TcIngredient.item(\"thaumcraft:fortress_helmet\"), List.of(TcIngredient.item(\"minecraft:slime_ball\"), TcIngredient.item(\"thaumcraft:goggles_of_revealing\"), TcIngredient.item(\"minecraft:honey_bottle\"))));"
+    },
+    {
+      "key": "MaskGrinningDevil",
+      "expected_sha256": "c77f251b0ab80ee2459bf5e4879c1284715c4d0236c3d5be47dbd3f6b64d2c06",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"MaskGrinningDevil\", \"MASKGRINNINGDEVIL\", TcStack.withData(\"thaumcraft:fortress_helmet\", 1, Map.of(\"mask\", \"0\")), 8, new AspectList().add(Aspect.MIND, 64).add(Aspect.HEAL, 64).add(Aspect.ARMOR, 16), TcIngredient.item(\"thaumcraft:fortress_helmet\"), List.of(TcIngredient.item(\"minecraft:ink_sac\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"thaumcraft:shimmerleaf\"), TcIngredient.item(\"thaumcraft:zombie_brain\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:echo_shard\"), TcIngredient.item(\"minecraft:echo_shard\"))));"
+    },
+    {
+      "key": "MaskAngryGhost",
+      "expected_sha256": "69a69df879c06b30187967aee0d63f8c14c9e16b507f59a8c43322f6dd36718a",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"MaskAngryGhost\", \"MASKANGRYGHOST\", TcStack.withData(\"thaumcraft:fortress_helmet\", 1, Map.of(\"mask\", \"1\")), 8, new AspectList().add(Aspect.ENTROPY, 64).add(Aspect.DEATH, 64).add(Aspect.ARMOR, 16), TcIngredient.item(\"thaumcraft:fortress_helmet\"), List.of(TcIngredient.item(\"minecraft:bone_meal\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:poisonous_potato\"), TcIngredient.item(\"minecraft:wither_skeleton_skull\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:armadillo_scute\"))));"
+    },
+    {
+      "key": "MaskSippingFiend",
+      "expected_sha256": "3b6a98578e38a764083ea590210ec47ba2bd436ed119e7483cc89473baccd706",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"MaskSippingFiend\", \"MASKSIPPINGFIEND\", TcStack.withData(\"thaumcraft:fortress_helmet\", 1, Map.of(\"mask\", \"2\")), 8, new AspectList().add(Aspect.UNDEAD, 64).add(Aspect.LIFE, 64).add(Aspect.ARMOR, 16), TcIngredient.item(\"thaumcraft:fortress_helmet\"), List.of(TcIngredient.item(\"minecraft:red_dye\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:leather\"), TcIngredient.item(\"minecraft:ghast_tear\"), TcIngredient.item(\"minecraft:milk_bucket\"), TcIngredient.item(\"minecraft:iron_ingot\"), TcIngredient.item(\"minecraft:beetroot_soup\"))));"
+    },
+    {
+      "key": "SanityCheck",
+      "expected_sha256": "4024583284d21d9516b9eb7f6334e0c5a39b87bbf8d0d26df55887890aa7d16e",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"SanityCheck\", \"SANITYCHECK\", TcStack.of(\"thaumcraft:sanity_checker\"), 4, new AspectList().add(Aspect.MIND, 24).add(Aspect.SENSES, 24).add(Aspect.ELDRITCH, 8), TcIngredient.item(\"thaumcraft:thaumometer\"), List.of(TcIngredient.item(\"thaumcraft:mirrored_glass\"), TcIngredient.item(\"thaumcraft:zombie_brain\"), TcIngredient.item(\"minecraft:diamond\"), TcIngredient.item(\"minecraft:nautilus_shell\"), TcIngredient.item(\"minecraft:amethyst_shard\"), TcIngredient.item(\"minecraft:echo_shard\"))));"
+    },
+    {
+      "key": "EldritchEye",
+      "expected_sha256": "fd03ea64be35e24a1bed7bf898d03120c82d3b0df1213eb371a419a4764be6d4",
+      "java": "        TcRecipes.register(new InfusionRecipe(\"EldritchEye\", \"OCULUS\", TcStack.of(\"thaumcraft:eldritch_eye\"), 5, new AspectList().add(Aspect.ELDRITCH, 64).add(Aspect.VOID, 16).add(Aspect.DARKNESS, 16).add(Aspect.TRAVEL, 16), TcIngredient.item(\"minecraft:ender_eye\"), List.of(TcIngredient.item(\"thaumcraft:void_seed\"), TcIngredient.item(\"minecraft:gold_ingot\"), TcIngredient.item(\"minecraft:end_crystal\"), TcIngredient.item(\"minecraft:end_crystal\"), TcIngredient.item(\"minecraft:echo_shard\"), TcIngredient.item(\"minecraft:amethyst_shard\"))));"
+    },
+    {
+      "key": "AltHoneyBottle",
+      "after": "AltInk",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltHoneyBottle\", \"ALCHEMICALDUPLICATION\", TcStack.of(\"minecraft:honey_bottle\", 2), TcIngredient.item(\"minecraft:honey_bottle\"), new AspectList().merge(Aspect.LIFE, 2).merge(Aspect.WATER, 2)));"
+    },
+    {
+      "key": "AltHoneycomb",
+      "after": "AltHoneyBottle",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltHoneycomb\", \"ALCHEMICALDUPLICATION\", TcStack.of(\"minecraft:honeycomb\", 2), TcIngredient.item(\"minecraft:honeycomb\"), new AspectList().merge(Aspect.LIFE, 2).merge(Aspect.WATER, 2)));"
+    },
+    {
+      "key": "AltGlowInk",
+      "after": "AltIce",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltGlowInk\", \"ALCHEMICALMANUFACTURE\", TcStack.of(\"minecraft:glow_ink_sac\"), TcIngredient.item(\"minecraft:ink_sac\"), new AspectList().merge(Aspect.SENSES, 2).merge(Aspect.LIGHT, 2)));"
+    },
+    {
+      "key": "AltPoisonousPotato",
+      "after": "AltGlowInk",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltPoisonousPotato\", \"ALCHEMICALMANUFACTURE\", TcStack.of(\"minecraft:poisonous_potato\"), TcIngredient.item(\"minecraft:potato\"), new AspectList().merge(Aspect.POISON, 2)));"
+    },
+    {
+      "key": "AltString",
+      "after": "AltBonemeal",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltString\", \"ENTROPICPROCESSING\", TcStack.of(\"minecraft:string\", 4), TcIngredient.tag(\"minecraft:wool\"), new AspectList().merge(Aspect.ENTROPY, 4)));"
+    },
+    {
+      "key": "AltQuartz",
+      "after": "AltString",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"AltQuartz\", \"ENTROPICPROCESSING\", TcStack.of(\"minecraft:quartz\", 4), TcIngredient.item(\"minecraft:quartz_block\"), new AspectList().merge(Aspect.ENTROPY, 2)));"
+    },
+    {
+      "key": "PureIron",
+      "expected_sha256": "26ff4a9f03715aff28abfd21a7a83a2e7a75181b952bc25d7c76c5e79515949e",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureIron\", \"PUREIRON\", TcStack.of(\"thaumcraft:native_iron_cluster\"), TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/iron\"), TcIngredient.tag(\"c:ores/iron\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "PureGold",
+      "expected_sha256": "4a39e2821f65f9b2e506b07a893ec9ebcd8f5d5f3199d86ee3c7ab81c32f6d3b",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureGold\", \"PUREGOLD\", TcStack.of(\"thaumcraft:native_gold_cluster\"), new TcIngredient.Excluding(TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/gold\"), TcIngredient.tag(\"c:ores/gold\")), TcIngredient.item(\"minecraft:nether_gold_ore\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "PureCopper",
+      "expected_sha256": "4ca75f98d8f50a882f20d3b97de3d632a834352f3d345288b8eca0b3699f7f01",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureCopper\", \"PURECOPPER\", TcStack.of(\"thaumcraft:native_copper_cluster\"), TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/copper\"), TcIngredient.tag(\"c:ores/copper\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "PureTin",
+      "expected_sha256": "9d4dbd3d041b43ceb57581258d5945fa955ec9736539ec11dbaec795afe4975b",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureTin\", \"PURETIN\", TcStack.of(\"thaumcraft:native_tin_cluster\"), TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/tin\"), TcIngredient.tag(\"c:ores/tin\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "PureSilver",
+      "expected_sha256": "ac02121d327c27e16e7d3e18b8685056b3eb52a6cd2b9562c68b3a06911a011f",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureSilver\", \"PURESILVER\", TcStack.of(\"thaumcraft:native_silver_cluster\"), TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/silver\"), TcIngredient.tag(\"c:ores/silver\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "PureLead",
+      "expected_sha256": "2e122bfa8678046357a990af7509116229509485d27b2c581e49a7708fc71ae5",
+      "java": "        TcRecipes.register(new CrucibleRecipe(\"PureLead\", \"PURELEAD\", TcStack.of(\"thaumcraft:native_lead_cluster\"), TcIngredient.anyOf(TcIngredient.tag(\"c:raw_materials/lead\"), TcIngredient.tag(\"c:ores/lead\")), new AspectList().merge(Aspect.METAL, 1).merge(Aspect.ORDER, 1)));"
+    },
+    {
+      "key": "AltCrackedBrick",
+      "expected_sha256": "8282f577c7ff30bc755eedbcef383d7b1b10fbd15099d2a99cca27d6dff1b355",
+      "java": null
+    },
+    {
+      "key": "AltMossyCobble",
+      "expected_sha256": "3107e3e4200ee43078dc468fe17cc4d9d2041c947428dcb3151a2e980dadce92",
+      "java": null
+    }
+  ],
+  "research": [],
+  "init_before_aspects": [
+    "thaumcraft.modern.ModernContent.recipes();"
+  ]
+}

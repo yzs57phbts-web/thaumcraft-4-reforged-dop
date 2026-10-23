@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:air_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:balanced_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:earth_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:entropy_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:fire_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:order_shard",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:water_shard",
+      "required": false
+    }
+  ]
+}

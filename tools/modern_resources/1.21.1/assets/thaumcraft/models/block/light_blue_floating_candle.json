@@ -1,0 +1,154 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "thaumcraft:models/floatycandle",
+    "body": "thaumcraft:models/floatycandle",
+    "wick": "thaumcraft:models/floatycandlestub"
+  },
+  "elements": [
+    {
+      "from": [
+        6,
+        4,
+        6
+      ],
+      "to": [
+        10,
+        12,
+        10
+      ],
+      "faces": {
+        "west": {
+          "texture": "#body",
+          "uv": [
+            0.0,
+            0.6666666666666666,
+            4.0,
+            2.0
+          ],
+          "tintindex": 0
+        },
+        "north": {
+          "texture": "#body",
+          "uv": [
+            4.0,
+            0.6666666666666666,
+            8.0,
+            2.0
+          ],
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#body",
+          "uv": [
+            8.0,
+            0.6666666666666666,
+            12.0,
+            2.0
+          ],
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#body",
+          "uv": [
+            12.0,
+            0.6666666666666666,
+            16.0,
+            2.0
+          ],
+          "tintindex": 0
+        },
+        "up": {
+          "texture": "#body",
+          "uv": [
+            4.0,
+            0.0,
+            8.0,
+            0.6666666666666666
+          ],
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#body",
+          "uv": [
+            8.0,
+            0.6666666666666666,
+            12.0,
+            0.0
+          ],
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "from": [
+        7.5,
+        12,
+        7.5
+      ],
+      "to": [
+        8.5,
+        14,
+        8.5
+      ],
+      "faces": {
+        "west": {
+          "texture": "#wick",
+          "uv": [
+            0.0,
+            1.0,
+            1.0,
+            3.0
+          ]
+        },
+        "north": {
+          "texture": "#wick",
+          "uv": [
+            1.0,
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        "east": {
+          "texture": "#wick",
+          "uv": [
+            2.0,
+            1.0,
+            3.0,
+            3.0
+          ]
+        },
+        "south": {
+          "texture": "#wick",
+          "uv": [
+            3.0,
+            1.0,
+            4.0,
+            3.0
+          ]
+        },
+        "up": {
+          "texture": "#wick",
+          "uv": [
+            1.0,
+            0.0,
+            2.0,
+            1.0
+          ]
+        },
+        "down": {
+          "texture": "#wick",
+          "uv": [
+            2.0,
+            1.0,
+            3.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

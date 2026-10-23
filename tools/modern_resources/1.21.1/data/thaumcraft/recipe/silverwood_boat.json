@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thaumcraft:silverwood_planks"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:silverwood_boat"
+  }
+}

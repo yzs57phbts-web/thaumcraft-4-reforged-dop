@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:greatwood_log"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:greatwood_planks"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "thaumcraft:greatwood_log"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:greatwood_planks",
+    "count": 4
+  }
+}

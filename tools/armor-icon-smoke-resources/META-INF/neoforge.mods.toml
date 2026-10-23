@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="armor_icon_smoke"
+version="1"
+displayName="Armor icon visual smoke fixture"

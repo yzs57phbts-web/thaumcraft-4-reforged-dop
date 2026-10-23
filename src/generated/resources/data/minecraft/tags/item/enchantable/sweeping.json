@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:crimson_blade",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_sword",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_sword",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_sword",
+      "required": false
+    }
+  ]
+}

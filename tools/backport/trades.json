@@ -1,0 +1,543 @@
+{
+  "meaning": "villager professions without a trade_set registry; build MerchantOffers in VillagerTradesEvent (or a profession level to ItemListing list). Each profession level 1..5 draws offers_picked_per_level distinct offers from the shared pool (seeded random per villager). wants/gives are item stacks (id, count where count is an int or a minecraft:uniform {min,max} range rolled per offer); given_item_modifier set_count rolls the result count. max_uses, xp and reputation_discount (price multiplier) map to MerchantOffer(maxUses, xp, priceMultiplier). Professions have no job site (point_of_interest is null), the wizard and banker villagers are spawned by the village templates with Xp 1.",
+  "professions": {
+    "wizard": {
+      "profession": "thaumcraft:wizard",
+      "point_of_interest": null,
+      "pool": [
+        {
+          "name": "gold_coin_emerald",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 20,
+              "max": 22
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "emerald_knowledge_fragment",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:knowledge_fragment"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "quicksilver_emerald",
+          "wants": {
+            "id": "thaumcraft:quicksilver",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 6
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "emerald_alumentum",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:alumentum"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "amber_emerald",
+          "wants": {
+            "id": "thaumcraft:amber",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 6
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "emerald_nitor",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:nitor"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "chicken_nugget_emerald",
+          "wants": {
+            "id": "thaumcraft:chicken_nugget",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 24,
+              "max": 31
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "book_knowledge_fragment",
+          "wants": {
+            "id": "minecraft:book",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 6
+            }
+          },
+          "gives": {
+            "id": "thaumcraft:knowledge_fragment"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "beef_nugget_emerald",
+          "wants": {
+            "id": "thaumcraft:beef_nugget",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 24,
+              "max": 31
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "emerald_air_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:air_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_fire_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:fire_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_water_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:water_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_earth_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:earth_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_order_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:order_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_entropy_shard",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:entropy_shard"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        {
+          "name": "emerald_mana_bean",
+          "wants": {
+            "id": "minecraft:emerald"
+          },
+          "gives": {
+            "id": "thaumcraft:mana_bean"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05,
+          "given_item_modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            }
+          }
+        }
+      ],
+      "levels": {
+        "1": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "2": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "3": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "4": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "5": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        }
+      }
+    },
+    "banker": {
+      "profession": "thaumcraft:banker",
+      "point_of_interest": null,
+      "pool": [
+        {
+          "name": "gold_coin_emerald",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 20,
+              "max": 22
+            }
+          },
+          "gives": {
+            "id": "minecraft:emerald"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_arrow",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          },
+          "gives": {
+            "id": "minecraft:arrow"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_white_wool",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 6,
+              "max": 8
+            }
+          },
+          "gives": {
+            "id": "minecraft:white_wool"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_paper",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 4
+            }
+          },
+          "gives": {
+            "id": "minecraft:paper"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_book",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 7,
+              "max": 9
+            }
+          },
+          "gives": {
+            "id": "minecraft:book"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_experience_bottle",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 16,
+              "max": 20
+            }
+          },
+          "gives": {
+            "id": "minecraft:experience_bottle"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_glowstone",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 9,
+              "max": 12
+            }
+          },
+          "gives": {
+            "id": "minecraft:glowstone"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_coal",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            }
+          },
+          "gives": {
+            "id": "minecraft:coal"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_diamond",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 22,
+              "max": 24
+            }
+          },
+          "gives": {
+            "id": "minecraft:diamond"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_iron_ingot",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 6,
+              "max": 8
+            }
+          },
+          "gives": {
+            "id": "minecraft:iron_ingot"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_thaumium_ingot",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 10,
+              "max": 12
+            }
+          },
+          "gives": {
+            "id": "thaumcraft:thaumium_ingot"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        },
+        {
+          "name": "gold_coin_saddle",
+          "wants": {
+            "id": "thaumcraft:gold_coin",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 25,
+              "max": 32
+            }
+          },
+          "gives": {
+            "id": "minecraft:saddle"
+          },
+          "max_uses": 7,
+          "xp": 5,
+          "reputation_discount": 0.05
+        }
+      ],
+      "levels": {
+        "1": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "2": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "3": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "4": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        },
+        "5": {
+          "offers_picked_per_level": 2,
+          "offers": "pool"
+        }
+      }
+    }
+  }
+}

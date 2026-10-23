@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:bone_bow",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crimson_blade",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_axe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_hoe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_pickaxe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_shovel",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:elemental_sword",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:primal_crusher",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_axe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_hoe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_shovel",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:thaumium_sword",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_axe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_hoe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_pickaxe",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_shovel",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:void_sword",
+      "required": false
+    }
+  ]
+}

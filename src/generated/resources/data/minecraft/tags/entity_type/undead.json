@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:brainy_zombie",
+    "thaumcraft:eldritch_guardian",
+    "thaumcraft:giant_brainy_zombie",
+    "thaumcraft:inhabited_zombie"
+  ]
+}

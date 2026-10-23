@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cinnabar_ore"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "thaumcraft:cinnabar_ore"
+  },
+  "result": {
+    "id": "thaumcraft:quicksilver"
+  }
+}

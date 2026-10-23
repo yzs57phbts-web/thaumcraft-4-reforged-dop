@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "tier=common": {
+      "model": "thaumcraft:block/loot_urn_common"
+    },
+    "tier=uncommon": {
+      "model": "thaumcraft:block/loot_urn_uncommon"
+    },
+    "tier=rare": {
+      "model": "thaumcraft:block/loot_urn_rare"
+    }
+  }
+}

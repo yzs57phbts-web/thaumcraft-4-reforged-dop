@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "bounds=0": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_0"
+    },
+    "bounds=1": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_1"
+    },
+    "bounds=2": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_2"
+    },
+    "bounds=3": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_3"
+    },
+    "bounds=4": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_4"
+    },
+    "bounds=5": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_5"
+    },
+    "bounds=6": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_6"
+    },
+    "bounds=7": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_7"
+    },
+    "bounds=8": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_8"
+    },
+    "bounds=9": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_9"
+    },
+    "bounds=10": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_10"
+    },
+    "bounds=11": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_11"
+    },
+    "bounds=12": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_12"
+    },
+    "bounds=13": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_13"
+    },
+    "bounds=14": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_14"
+    },
+    "bounds=15": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_15"
+    },
+    "bounds=16": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_16"
+    },
+    "bounds=17": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_17"
+    },
+    "bounds=18": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_18"
+    },
+    "bounds=19": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_19"
+    },
+    "bounds=20": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_20"
+    },
+    "bounds=21": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_21"
+    },
+    "bounds=22": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_22"
+    },
+    "bounds=23": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_23"
+    },
+    "bounds=24": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_24"
+    },
+    "bounds=25": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_25"
+    },
+    "bounds=26": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_26"
+    },
+    "bounds=27": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_27"
+    },
+    "bounds=28": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_28"
+    },
+    "bounds=29": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_29"
+    },
+    "bounds=30": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_30"
+    },
+    "bounds=31": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_31"
+    },
+    "bounds=32": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_32"
+    },
+    "bounds=33": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_33"
+    },
+    "bounds=34": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_34"
+    },
+    "bounds=35": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_35"
+    },
+    "bounds=36": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_36"
+    },
+    "bounds=37": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_37"
+    },
+    "bounds=38": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_38"
+    },
+    "bounds=39": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_39"
+    },
+    "bounds=40": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_40"
+    },
+    "bounds=41": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_41"
+    },
+    "bounds=42": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_42"
+    },
+    "bounds=43": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_43"
+    },
+    "bounds=44": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_44"
+    },
+    "bounds=45": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_45"
+    },
+    "bounds=46": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_46"
+    },
+    "bounds=47": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_47"
+    },
+    "bounds=48": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_48"
+    },
+    "bounds=49": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_49"
+    },
+    "bounds=50": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_50"
+    },
+    "bounds=51": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_51"
+    },
+    "bounds=52": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_52"
+    },
+    "bounds=53": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_53"
+    },
+    "bounds=54": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_54"
+    },
+    "bounds=55": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_55"
+    },
+    "bounds=56": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_56"
+    },
+    "bounds=57": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_57"
+    },
+    "bounds=58": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_58"
+    },
+    "bounds=59": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_59"
+    },
+    "bounds=60": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_60"
+    },
+    "bounds=61": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_61"
+    },
+    "bounds=62": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_62"
+    },
+    "bounds=63": {
+      "model": "thaumcraft:block/glowing_crusted_stone_block_63"
+    }
+  }
+}

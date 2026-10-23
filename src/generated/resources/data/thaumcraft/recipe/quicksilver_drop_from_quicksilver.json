@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver_drop"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thaumcraft:quicksilver"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:quicksilver_drop",
+    "count": 9
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "heartbeat": {
+    "sounds": [
+      {
+        "name": "thaumcraft:heartbeat",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.heartbeat"
+  },
+  "spill": {
+    "sounds": [
+      {
+        "name": "thaumcraft:spill",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.spill"
+  },
+  "bubble": {
+    "sounds": [
+      "thaumcraft:bubble1",
+      "thaumcraft:bubble2",
+      "thaumcraft:bubble3",
+      "thaumcraft:bubble4"
+    ],
+    "subtitle": "subtitles.thaumcraft.bubble"
+  },
+  "alembicknock": {
+    "sounds": [
+      {
+        "name": "thaumcraft:alembicknock",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.alembicknock"
+  },
+  "creak": {
+    "sounds": [
+      "thaumcraft:creak1",
+      "thaumcraft:creak2"
+    ],
+    "subtitle": "subtitles.thaumcraft.creak"
+  },
+  "squeek": {
+    "sounds": [
+      "thaumcraft:squeek1",
+      "thaumcraft:squeek2"
+    ],
+    "subtitle": "subtitles.thaumcraft.squeek"
+  },
+  "golemironshoot": {
+    "sounds": [
+      {
+        "name": "thaumcraft:golemironshoot",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.golemironshoot"
+  },
+  "jar": {
+    "sounds": [
+      "thaumcraft:jar1",
+      "thaumcraft:jar2",
+      "thaumcraft:jar3",
+      "thaumcraft:jar4"
+    ],
+    "subtitle": "subtitles.thaumcraft.jar"
+  },
+  "swarm": {
+    "sounds": [
+      "thaumcraft:swarm1",
+      "thaumcraft:swarm2",
+      "thaumcraft:swarm3"
+    ],
+    "subtitle": "subtitles.thaumcraft.swarm"
+  },
+  "swarmattack": {
+    "sounds": [
+      {
+        "name": "thaumcraft:swarmattack",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.swarmattack"
+  },
+  "fly": {
+    "sounds": [
+      "thaumcraft:fly1",
+      "thaumcraft:fly2"
+    ],
+    "subtitle": "subtitles.thaumcraft.fly"
+  },
+  "key": {
+    "sounds": [
+      {
+        "name": "thaumcraft:key",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.key"
+  },
+  "doorfail": {
+    "sounds": [
+      {
+        "name": "thaumcraft:doorfail",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.doorfail"
+  },
+  "cameraticks": {
+    "sounds": [
+      {
+        "name": "thaumcraft:cameraticks",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.cameraticks"
+  },
+  "cameraclack": {
+    "sounds": [
+      "thaumcraft:cameraclack1",
+      "thaumcraft:cameraclack2",
+      "thaumcraft:cameraclack3"
+    ],
+    "subtitle": "subtitles.thaumcraft.cameraclack"
+  },
+  "pump": {
+    "sounds": [
+      "thaumcraft:pump1",
+      "thaumcraft:pump2",
+      "thaumcraft:pump3"
+    ],
+    "subtitle": "subtitles.thaumcraft.pump"
+  },
+  "page": {
+    "sounds": [
+      "thaumcraft:page1",
+      "thaumcraft:page2"
+    ],
+    "subtitle": "subtitles.thaumcraft.page"
+  },
+  "learn": {
+    "sounds": [
+      {
+        "name": "thaumcraft:learn",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.learn"
+  },
+  "write": {
+    "sounds": [
+      "thaumcraft:write1",
+      "thaumcraft:write2"
+    ],
+    "subtitle": "subtitles.thaumcraft.write"
+  },
+  "erase": {
+    "sounds": [
+      {
+        "name": "thaumcraft:erase",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.erase"
+  },
+  "brain": {
+    "sounds": [
+      "thaumcraft:brain1",
+      "thaumcraft:brain2",
+      "thaumcraft:brain3",
+      "thaumcraft:brain4"
+    ],
+    "subtitle": "subtitles.thaumcraft.brain"
+  },
+  "crystal": {
+    "sounds": [
+      {
+        "name": "thaumcraft:crystal",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.crystal"
+  },
+  "wispdead": {
+    "sounds": [
+      {
+        "name": "thaumcraft:wispdead",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.wispdead"
+  },
+  "wisplive": {
+    "sounds": [
+      "thaumcraft:wisplive1",
+      "thaumcraft:wisplive2",
+      "thaumcraft:wisplive3"
+    ],
+    "subtitle": "subtitles.thaumcraft.wisplive"
+  },
+  "wand": {
+    "sounds": [
+      "thaumcraft:wand1",
+      "thaumcraft:wand2",
+      "thaumcraft:wand3"
+    ],
+    "subtitle": "subtitles.thaumcraft.wand"
+  },
+  "wandfail": {
+    "sounds": [
+      {
+        "name": "thaumcraft:wandfail",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.wandfail"
+  },
+  "rumble": {
+    "sounds": [
+      {
+        "name": "thaumcraft:rumble",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.rumble"
+  },
+  "ice": {
+    "sounds": [
+      "thaumcraft:ice1",
+      "thaumcraft:ice2",
+      "thaumcraft:ice3"
+    ],
+    "subtitle": "subtitles.thaumcraft.ice"
+  },
+  "jacobs": {
+    "sounds": [
+      {
+        "name": "thaumcraft:jacobs",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.jacobs"
+  },
+  "hhoff": {
+    "sounds": [
+      {
+        "name": "thaumcraft:hhoff",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.hhoff"
+  },
+  "hhon": {
+    "sounds": [
+      {
+        "name": "thaumcraft:hhon",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.hhon"
+  },
+  "pech_idle": {
+    "sounds": [
+      "thaumcraft:pech_idle1",
+      "thaumcraft:pech_idle2",
+      "thaumcraft:pech_idle3"
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_idle"
+  },
+  "pech_trade": {
+    "sounds": [
+      {
+        "name": "thaumcraft:pech_trade",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_trade"
+  },
+  "pech_dice": {
+    "sounds": [
+      {
+        "name": "thaumcraft:pech_dice",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_dice"
+  },
+  "pech_hit": {
+    "sounds": [
+      "thaumcraft:pech_hit1",
+      "thaumcraft:pech_hit2"
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_hit"
+  },
+  "pech_death": {
+    "sounds": [
+      {
+        "name": "thaumcraft:pech_death",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_death"
+  },
+  "pech_charge": {
+    "sounds": [
+      "thaumcraft:pech_charge1",
+      "thaumcraft:pech_charge2"
+    ],
+    "subtitle": "subtitles.thaumcraft.pech_charge"
+  },
+  "shock": {
+    "sounds": [
+      "thaumcraft:shock1",
+      "thaumcraft:shock2"
+    ],
+    "subtitle": "subtitles.thaumcraft.shock"
+  },
+  "fireloop": {
+    "sounds": [
+      {
+        "name": "thaumcraft:fireloop",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.fireloop"
+  },
+  "zap": {
+    "sounds": [
+      "thaumcraft:zap1",
+      "thaumcraft:zap2"
+    ],
+    "subtitle": "subtitles.thaumcraft.zap"
+  },
+  "craftfail": {
+    "sounds": [
+      {
+        "name": "thaumcraft:craftfail",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.craftfail"
+  },
+  "craftstart": {
+    "sounds": [
+      {
+        "name": "thaumcraft:craftstart",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.craftstart"
+  },
+  "runic_shield_effect": {
+    "sounds": [
+      {
+        "name": "thaumcraft:runic_shield_effect",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.runic_shield_effect"
+  },
+  "runic_shield_charge": {
+    "sounds": [
+      {
+        "name": "thaumcraft:runic_shield_charge",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.runic_shield_charge"
+  },
+  "swing": {
+    "sounds": [
+      "thaumcraft:swing1",
+      "thaumcraft:swing2"
+    ],
+    "subtitle": "subtitles.thaumcraft.swing"
+  },
+  "wind": {
+    "sounds": [
+      "thaumcraft:wind1",
+      "thaumcraft:wind2"
+    ],
+    "subtitle": "subtitles.thaumcraft.wind"
+  },
+  "tool": {
+    "sounds": [
+      "thaumcraft:tool1",
+      "thaumcraft:tool2"
+    ],
+    "subtitle": "subtitles.thaumcraft.tool"
+  },
+  "gore": {
+    "sounds": [
+      "thaumcraft:gore1",
+      "thaumcraft:gore2"
+    ],
+    "subtitle": "subtitles.thaumcraft.gore"
+  },
+  "roots": {
+    "sounds": [
+      "thaumcraft:roots1",
+      "thaumcraft:roots2",
+      "thaumcraft:roots3"
+    ],
+    "subtitle": "subtitles.thaumcraft.roots"
+  },
+  "tentacle": {
+    "sounds": [
+      "thaumcraft:tentacle1",
+      "thaumcraft:tentacle2",
+      "thaumcraft:tentacle3"
+    ],
+    "subtitle": "subtitles.thaumcraft.tentacle"
+  },
+  "upgrade": {
+    "sounds": [
+      {
+        "name": "thaumcraft:upgrade",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.upgrade"
+  },
+  "whispers": {
+    "sounds": [
+      {
+        "name": "thaumcraft:whispers",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.whispers"
+  },
+  "monolith": {
+    "sounds": [
+      {
+        "name": "thaumcraft:monolith",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.monolith"
+  },
+  "infuser": {
+    "sounds": [
+      {
+        "name": "thaumcraft:infuser",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.infuser"
+  },
+  "infuserstart": {
+    "sounds": [
+      {
+        "name": "thaumcraft:infuserstart",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.infuserstart"
+  },
+  "egidle": {
+    "sounds": [
+      "thaumcraft:egidle1",
+      "thaumcraft:egidle2"
+    ],
+    "subtitle": "subtitles.thaumcraft.egidle"
+  },
+  "egattack": {
+    "sounds": [
+      {
+        "name": "thaumcraft:egattack",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.egattack"
+  },
+  "egdeath": {
+    "sounds": [
+      {
+        "name": "thaumcraft:egdeath",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.egdeath"
+  },
+  "egscreech": {
+    "sounds": [
+      {
+        "name": "thaumcraft:egscreech",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.egscreech"
+  },
+  "crabclaw": {
+    "sounds": [
+      {
+        "name": "thaumcraft:crabclaw",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.crabclaw"
+  },
+  "crabdeath": {
+    "sounds": [
+      {
+        "name": "thaumcraft:crabdeath",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.crabdeath"
+  },
+  "crabtalk": {
+    "sounds": [
+      "thaumcraft:crabtalk1",
+      "thaumcraft:crabtalk2",
+      "thaumcraft:crabtalk3"
+    ],
+    "subtitle": "subtitles.thaumcraft.crabtalk"
+  },
+  "chant": {
+    "sounds": [
+      "thaumcraft:chant1",
+      "thaumcraft:chant2",
+      "thaumcraft:chant3"
+    ],
+    "subtitle": "subtitles.thaumcraft.chant"
+  },
+  "coins": {
+    "sounds": [
+      {
+        "name": "thaumcraft:coins",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.coins"
+  },
+  "urnbreak": {
+    "sounds": [
+      {
+        "name": "thaumcraft:urnbreak",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.urnbreak"
+  },
+  "evilportal": {
+    "sounds": [
+      {
+        "name": "thaumcraft:evilportal",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.thaumcraft.evilportal"
+  }
+}

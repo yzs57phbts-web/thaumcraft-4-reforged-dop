@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumometer"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "1": {
+      "tag": "thaumcraft:shards"
+    }
+  },
+  "pattern": [
+    " 1 ",
+    "IGI",
+    " 1 "
+  ],
+  "result": {
+    "id": "thaumcraft:thaumometer"
+  }
+}

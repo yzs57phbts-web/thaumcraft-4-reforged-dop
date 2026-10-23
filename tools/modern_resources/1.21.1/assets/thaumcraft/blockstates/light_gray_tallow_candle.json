@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "thaumcraft:block/light_gray_floating_candle"
+    }
+  }
+}

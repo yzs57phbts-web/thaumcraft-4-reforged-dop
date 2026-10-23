@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "base=up": {
+      "model": "thaumcraft:block/arcane_bore"
+    },
+    "base=down": {
+      "model": "thaumcraft:block/arcane_bore"
+    }
+  }
+}
