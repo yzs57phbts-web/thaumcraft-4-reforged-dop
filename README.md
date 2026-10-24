@@ -1,12 +1,21 @@
-# Thaumcraft 4: Reforged — DOP
+# Thaumcraft 4: Reforged
 
 Неофициальная доработанная версия **Thaumcraft 4: Reforged** для **Minecraft 1.21.1 / NeoForge**.
 
-Проект основан на [порте notlikethiss](https://github.com/notlikethiss/thaumcraft-4-reforged). Ниже перечислены исправления и доработки редакции DOP относительно его ветки `mc/1.21.1`, коммита [`17dd730`](https://github.com/notlikethiss/thaumcraft-4-reforged/tree/17dd73087e52bf918cd7f580abd2114e44f88544). Список относится к самому Thaumcraft, без изменений соседних аддонов.
+Проект основан на [порте notlikethiss](https://github.com/notlikethiss/thaumcraft-4-reforged). Ниже перечислены исправления и доработки относительно его ветки `mc/1.21.1`, коммита [`17dd730`](https://github.com/notlikethiss/thaumcraft-4-reforged/tree/17dd73087e52bf918cd7f580abd2114e44f88544).
 
-## Статус публикации
+## Для запуска
 
-Репозиторий пока содержит описание проекта и список доработок. Исходный код и готовые сборки ещё не опубликованы.
+Нужны **Minecraft 1.21.1**, **NeoForge 21.1.256 или новее** и **Java 21**.
+
+Обязательные моды:
+
+- [Curios API 9.5.1](https://www.curseforge.com/minecraft/mc-mods/curios/files/6529130)
+- [TerraBlender 4.1.0.8 (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947)
+
+Ссылки ведут на совместимые версии для Minecraft 1.21.1 / NeoForge на CurseForge.
+
+Скачайте JAR Thaumcraft из [релиза 1.21.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.21.1) и поместите его вместе с Curios и TerraBlender в папку `mods`.
 
 ## Пофиксили
 
@@ -92,11 +101,9 @@
 
 - **Azanor** — автор оригинального Thaumcraft.
 - **notlikethiss / overseas** — исходный порт Thaumcraft 4: Reforged.
-- **[yzs57phbts-web](https://github.com/yzs57phbts-web)** — доработки редакции DOP.
+- **[yzs57phbts-web](https://github.com/yzs57phbts-web)** — исправления и доработки.
 
 [Исходный проект](https://github.com/notlikethiss/thaumcraft-4-reforged) · [Релизы исходного порта](https://github.com/notlikethiss/thaumcraft-4-reforged/releases)
-
-DOP — отдельная неофициальная редакция; она не является официальным продолжением от авторов оригинала или исходного порта.
 
 ## Условия использования
 
