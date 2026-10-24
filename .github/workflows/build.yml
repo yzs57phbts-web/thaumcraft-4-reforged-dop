@@ -35,7 +35,7 @@ jobs:
       - name: Build and run every required GameTest namespace
         run: |
           chmod +x gradlew
-          ./gradlew build runAllGameTests prepareClientRun
+          ./gradlew build runAllGameTests writeGeometryTestClasspath
       - name: Check geometry and validation tools
         run: python3 -m unittest discover -s tools -p 'test_*.py'
       - name: Check portal activation and fluid regressions in a fresh world

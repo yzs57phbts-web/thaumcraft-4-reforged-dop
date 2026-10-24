@@ -337,6 +337,24 @@ tasks.named('check') {
     dependsOn tasks.named('compileGameTestJava'), tasks.named('processGameTestResources')
 }
 
+// Export the resolved Minecraft classpath, rather than guessing generated JAR names.
+var geometryClasspath = sourceSets.main.output + sourceSets.main.compileClasspath
+var geometryClientClasspath = layout.buildDirectory.file('moddev/clientLegacyClasspath.txt')
+var geometryClasspathOutput = layout.buildDirectory.file('moddev/geometryTestClasspath.txt')
+tasks.register('writeGeometryTestClasspath') {
+    dependsOn tasks.named('classes'), tasks.named('prepareClientRun')
+    inputs.files(geometryClasspath)
+    inputs.file(geometryClientClasspath)
+    outputs.file(geometryClasspathOutput)
+    doLast {
+        def entries = geometryClasspath.files.collect { it.absolutePath }
+        entries.addAll(geometryClientClasspath.get().asFile.readLines('UTF-8'))
+        def target = geometryClasspathOutput.get().asFile
+        target.parentFile.mkdirs()
+        target.setText(entries.unique().join(System.lineSeparator()) + System.lineSeparator(), 'UTF-8')
+    }
+}
+
 var prepareAlchemyAuditTests = tasks.register('prepareAlchemyAuditTests', Copy) {
     from 'src/gametest/packs/outer_lands'
     into 'build/alchemy-audit-world/datapacks/outer_lands'
