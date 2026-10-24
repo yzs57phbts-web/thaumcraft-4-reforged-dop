@@ -16,11 +16,33 @@ sourceSets.main.resources {
     exclude 'data/**/structure/test/**'
 }
 
+// Registry coverage is a test fixture generated from the checked-in ID mapping.
+// Keep it available to GameTests without packaging an audit report in the mod.
+var generateGameTestInventory = tasks.register('generateGameTestInventory') {
+    def mapping = layout.projectDirectory.file('tools/id_map.json')
+    def output = layout.buildDirectory.dir('generated/gametest-inventory')
+    inputs.file(mapping)
+    outputs.dir(output)
+    doLast {
+        def ids = new groovy.json.JsonSlurper().parse(mapping.asFile)
+        def expected = ['blocks', 'items'].collectEntries { kind ->
+            [(kind): ids[kind].findAll { it.id && !it.skip }.collect {
+                it.id.contains(':') ? it.id : "thaumcraft:${it.id}"
+            }.unique().sort()]
+        }
+        def fixture = new File(output.get().asFile, 'data/thaumcraft/audit/legacy_inventory.json')
+        fixture.parentFile.mkdirs()
+        fixture.setText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(expected)) + '\n', 'UTF-8')
+    }
+}
+
 sourceSets {
     gameTest {
         java.setSrcDirs(['src/gametest/java'])
         resources.setSrcDirs(['src/gametest/resources', 'src/main/resources', 'src/generated/resources'])
+        resources.srcDir(generateGameTestInventory)
         resources.include 'data/**/structure/test/**'
+        resources.include 'data/thaumcraft/audit/legacy_inventory.json'
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
         runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
     }

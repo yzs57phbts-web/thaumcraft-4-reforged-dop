@@ -38,3 +38,5 @@ jobs:
           ./gradlew build runAllGameTests prepareClientRun
       - name: Check geometry and validation tools
         run: python3 -m unittest discover -s tools -p 'test_*.py'
+      - name: Check portal activation and fluid regressions in a fresh world
+        run: ./gradlew -I tools/portal-fluid-tests.gradle -PportalFluidRun=ci runGameTestServer

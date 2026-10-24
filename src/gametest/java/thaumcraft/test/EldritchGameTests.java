@@ -163,32 +163,38 @@ public final class EldritchGameTests {
             helper.assertValueEqual(Wands.getVis(wand, aspect), Wands.getMaxVis(wand), "rejected activation consumed vis");
         }
         ResearchManager.complete(player, "OCULUS");
+        var outer = level.getServer().getLevel(thaumcraft.world.dim.OuterLands.OUTER_LANDS);
+        helper.assertTrue(!thaumcraft.world.dim.MazeHandler.isReady(outer, pos.getX() >> 4, pos.getZ() >> 4), "regression must start with an unfinished maze");
+        EldritchBlockEntity currentAltar = (EldritchBlockEntity) level.getBlockEntity(pos);
+        Wands.storeVis(wand, Aspect.AIR, 0);
+        player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
+        helper.assertTrue(!currentAltar.isOpen() && level.getBlockState(pos.above()).is(ModBlocks.AURA_NODE.get()), "altar activated without enough vis");
+        for (Aspect aspect : Aspect.getPrimalAspects()) {
+            helper.assertValueEqual(Wands.getVis(wand, aspect), aspect == Aspect.AIR ? 0 : Wands.getMaxVis(wand), "failed activation partially consumed vis");
+        }
+        Wands.fill(wand);
+        player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
+        helper.assertTrue(currentAltar.isOpen(), "first valid click did not open the portal while its maze was generating");
+        helper.assertTrue(helper.getLevel().getBlockState(pos.above()).is(EldritchContent.ELDRITCH_PORTAL.get()), "altar activation should replace the dark node with a portal");
+        for (Aspect aspect : Aspect.getPrimalAspects()) {
+            int cost = (int)(10000 * ((WandItem) wand.getItem()).getConsumptionModifier(wand, player, aspect, true));
+            helper.assertValueEqual(Wands.getVis(wand, aspect), 10000 - cost, "altar activation should consume 100 vis of each primal aspect");
+        }
+        helper.assertTrue(level.getBlockEntity(pos) == currentAltar, "activation destroyed the altar");
+        for (int y = 2; y <= 6; y++) {
+            helper.assertTrue(level.getBlockState(pos.above(y)).is(EldritchContent.ELDRITCH_OBELISK.get()), "activation destroyed the obelisk");
+        }
+        AspectList remaining = Wands.getAllVis(wand).copy();
+        player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
+        helper.assertTrue(remaining.equals(Wands.getAllVis(wand)), "repeated activation consumed vis again");
+        helper.assertTrue(!EldritchPortalTravel.tryTravel(level, pos.above(), player), "unfinished maze must not accept a player");
+        helper.assertTrue(player.level() == level && player.getPortalCooldown() == 0, "waiting for generation must not move or lock out the player");
+        // Avoid the automatic portal scan until the explicit travel assertion.
+        player.moveTo(pos.getX() + 4.5, pos.getY() + 1, pos.getZ() + 0.5, 0.0F, 0.0F);
         helper.startSequence().thenWaitUntil(() -> {
-            var outer = level.getServer().getLevel(thaumcraft.world.dim.OuterLands.OUTER_LANDS);
-            helper.assertTrue(thaumcraft.world.dim.MazeHandler.ensureMaze(outer, pos), "outer maze is not ready yet");
+            helper.assertTrue(thaumcraft.world.dim.MazeHandler.isReady(outer, pos.getX() >> 4, pos.getZ() >> 4), "outer maze is not ready yet");
         }).thenExecute(() -> {
-            EldritchBlockEntity currentAltar = (EldritchBlockEntity) level.getBlockEntity(pos);
-            Wands.storeVis(wand, Aspect.AIR, 0);
-            player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
-            helper.assertTrue(!currentAltar.isOpen() && level.getBlockState(pos.above()).is(ModBlocks.AURA_NODE.get()), "altar activated without enough vis");
-            for (Aspect aspect : Aspect.getPrimalAspects()) {
-                helper.assertValueEqual(Wands.getVis(wand, aspect), aspect == Aspect.AIR ? 0 : Wands.getMaxVis(wand), "failed activation partially consumed vis");
-            }
-            Wands.fill(wand);
-            player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
-            helper.assertTrue(currentAltar.isOpen(), "four-eyed altar did not activate: block=" + level.getBlockState(pos) + ", node=" + level.getBlockEntity(pos.above()) + ", eyes=" + currentAltar.eyeCount() + ", research=" + ResearchManager.isComplete(player, "OCULUS") + ", held=" + player.getMainHandItem() + ", alive=" + player.isAlive() + ", trigger=" + WandTriggers.hasTrigger(level.getBlockState(pos)));
-            helper.assertTrue(helper.getLevel().getBlockState(pos.above()).is(EldritchContent.ELDRITCH_PORTAL.get()), "altar activation should replace the dark node with a portal");
-            for (Aspect aspect : Aspect.getPrimalAspects()) {
-                int cost = (int)(10000 * ((WandItem) wand.getItem()).getConsumptionModifier(wand, player, aspect, true));
-                helper.assertValueEqual(Wands.getVis(wand, aspect), 10000 - cost, "altar activation should consume 100 vis of each primal aspect");
-            }
-            helper.assertTrue(level.getBlockEntity(pos) == currentAltar, "activation destroyed the altar");
-            for (int y = 2; y <= 6; y++) {
-                helper.assertTrue(level.getBlockState(pos.above(y)).is(EldritchContent.ELDRITCH_OBELISK.get()), "activation destroyed the obelisk");
-            }
-            AspectList remaining = Wands.getAllVis(wand).copy();
-            player.gameMode.useItemOn(player, level, wand, InteractionHand.MAIN_HAND, hit);
-            helper.assertTrue(remaining.equals(Wands.getAllVis(wand)), "repeated activation consumed vis again");
+            helper.assertTrue(currentAltar.isOpen() && remaining.equals(Wands.getAllVis(wand)), "portal must stay open without further activation or vis charges");
             helper.assertTrue(EldritchPortalTravel.tryTravel(helper.getLevel(), pos.above(), player), "ready portal should transfer the player");
             helper.assertTrue(player.level().dimension().equals(thaumcraft.world.dim.OuterLands.OUTER_LANDS), "portal should enter the Outer Lands");
             helper.assertTrue(ResearchManager.isComplete(player, "ENTEROUTER"), "first portal entry should complete ENTEROUTER research");

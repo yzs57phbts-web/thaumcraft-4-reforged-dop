@@ -50,9 +50,11 @@ public final class EldritchWandTriggers {
             return false;
         }
         ServerLevel outer = serverLevel.getServer().getLevel(OuterLands.OUTER_LANDS);
-        if (outer == null || !MazeHandler.ensureMaze(outer, pos)) {
+        if (outer == null) {
             return false;
         }
+        // Start opening on this valid click. Travel still waits for maze generation.
+        MazeHandler.ensureMaze(outer, pos);
         AspectList cost = new AspectList()
             .add(Aspect.AIR, 100)
             .add(Aspect.FIRE, 100)

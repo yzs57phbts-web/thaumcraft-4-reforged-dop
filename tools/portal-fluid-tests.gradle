@@ -1,0 +1,14 @@
+// Focused regression run. Separate worlds keep the unfinished-maze assertion meaningful.
+gradle.projectsEvaluated {
+    def project = rootProject
+    def trial = project.providers.gradleProperty('portalFluidRun').getOrElse('fixed')
+    if (!(trial ==~ /[a-z0-9-]+/)) throw new GradleException('Invalid portalFluidRun name')
+    def world = project.file("build/portal-fluid-${trial}-world")
+    project.extensions.getByName('neoForge').runs.getByName('gameTestServer').with {
+        systemProperty('neoforge.enabledGameTestNamespaces', 'thaumcraft_portal_fluid')
+        programArguments.set(['--world', world.absolutePath])
+    }
+    project.tasks.named('prepareOuterLandsTests').configure {
+        into new File(world, 'datapacks/outer_lands')
+    }
+}
