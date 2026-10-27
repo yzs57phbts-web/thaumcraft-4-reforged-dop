@@ -2,6 +2,8 @@
 
 Неофициальная доработанная версия **Thaumcraft 4: Reforged** для **Minecraft 1.21.1 / NeoForge**.
 
+Текущий выпуск — **1.1-bbtt.30-filter.1**: цельный релиз `bbtt.30` с добавленным фильтром спауна заражённых земель. Все 1234 класса исходного `bbtt.30` сохранены побайтно; исходники этой версии продолжают полную ветку `30`.
+
 Проект основан на [порте notlikethiss](https://github.com/notlikethiss/thaumcraft-4-reforged). Ниже перечислены исправления и доработки относительно его ветки `mc/1.21.1`, коммита [`17dd730`](https://github.com/notlikethiss/thaumcraft-4-reforged/tree/17dd73087e52bf918cd7f580abd2114e44f88544).
 
 ## Для запуска
@@ -11,11 +13,28 @@
 Обязательные моды:
 
 - [Curios API 9.5.1](https://www.curseforge.com/minecraft/mc-mods/curios/files/6529130)
-- [TerraBlender 4.1.0.8 (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947)
+- [TerraBlender 4.1.0.1+ (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947)
 
 Ссылки ведут на совместимые версии для Minecraft 1.21.1 / NeoForge на CurseForge.
 
-Скачайте JAR Thaumcraft из [релиза 1.21.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.21.1) и поместите его вместе с Curios и TerraBlender в папку `mods`.
+Скачайте JAR Thaumcraft из [релиза 1.21.1-bbtt.30-filter.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.21.1-bbtt.30-filter.1) и поместите его вместе с Curios и TerraBlender в папку `mods`.
+
+## Дополнение к цельной версии 30
+
+- Эльдрический портал открывается с первого корректного нажатия жезлом. Переход по-прежнему требует готового лабиринта.
+- При установленном Quark из заражённых земель исключены Stoneling, Toretoise и пехи; пехи магического леса сохранены.
+- Фильтр находится в самом T4 и воспроизводится генератором. Для него не нужен отдельный `bbtt-fixes`.
+- Сборка с нынешними аддонами проверена в настоящем Creative-мире: вкладка T4, полная прокрутка, жезлы и повтор после перезагрузки ресурсов. Это не полный аудит всех механик выживания.
+
+Исходный неизменённый [bbtt.30](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.21.1) сохранён как предыдущий релиз.
+
+## Наши аддоны для 1.21.1
+
+- [Forbidden Magic](https://github.com/yzs57phbts-web/forbidden-magic-reforged)
+- [Thaumic Tinkerer](https://github.com/yzs57phbts-web/thaumic-tinkerer-reforged)
+- [Thaumic Horizons](https://github.com/yzs57phbts-web/thaumic-horizons-reforged)
+- [Thaumic Exploration](https://github.com/yzs57phbts-web/thaumic-exploration-reforged)
+- [Witching Gadgets](https://github.com/yzs57phbts-web/witching-gadgets-reforged)
 
 ## Пофиксили
 
