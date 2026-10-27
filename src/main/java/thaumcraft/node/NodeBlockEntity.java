@@ -14,6 +14,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ClipContext;
@@ -414,21 +415,25 @@ public class NodeBlockEntity extends TcBlockEntity implements Node, WandInteract
     }
 
     private boolean feedOnKill(ServerLevel serverLevel, Entity entity, boolean change) {
-        AspectList scanned = AspectHelper.getEntityTags(entity);
-        if (scanned == null || scanned.size() <= 0) {
+        AspectList food;
+        if (entity instanceof ItemEntity item) {
+            // Legacy scans value one item, including its contained and bonus aspects.
+            ItemStack consumed = item.getItem().copyWithCount(1);
+            food = AspectHelper.getBonusTags(consumed, AspectHelper.getObjectTags(consumed));
+        } else {
+            food = AspectHelper.getEntityTags(entity);
+        }
+        if (food == null || food.size() <= 0) {
             return change;
         }
-        AspectList primals = AspectHelper.reduceToPrimals(scanned.copy());
-        if (primals.size() <= 0) {
-            return change;
-        }
-        List<Aspect> found = primals.getAspects();
+        // Preserve compounds while feeding; energized-node conversion reduces them later.
+        List<Aspect> found = food.getAspects();
         Aspect aspect = found.get(serverLevel.getRandom().nextInt(found.size()));
         if (aspects.getAmount(aspect) < getNodeVisBase(aspect)) {
             addToContainer(aspect, 1);
             return true;
         }
-        if (serverLevel.getRandom().nextInt(1 + getNodeVisBase(aspect) * 2) < primals.getAmount(aspect)) {
+        if (serverLevel.getRandom().nextInt(1 + getNodeVisBase(aspect) * 2) < food.getAmount(aspect)) {
             aspectsBase.add(aspect, 1);
             return true;
         }
