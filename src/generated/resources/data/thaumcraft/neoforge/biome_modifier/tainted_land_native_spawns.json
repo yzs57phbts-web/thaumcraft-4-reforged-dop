@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "type": "neoforge:remove_spawns",
+  "biomes": "thaumcraft:tainted_land",
+  "entity_types": [
+    "quark:stoneling",
+    "quark:toretoise",
+    "thaumcraft:pech"
+  ]
+}

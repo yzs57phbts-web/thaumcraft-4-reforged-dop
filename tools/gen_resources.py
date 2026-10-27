@@ -1095,6 +1095,8 @@ def main():
     write_extras()
     import gen_modern_resources
     gen_modern_resources.generate(OUT, profile.name)
+    import gen_tainted_land_filter
+    gen_tainted_land_filter.generate(OUT, profile.name)
     write_manifests()
     validate_textures()
     validate_models()
