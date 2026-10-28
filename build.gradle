@@ -105,7 +105,7 @@ base {
 }
 
 tasks.named('jar', Jar) {
-    archiveFileName = "thaumcraft-4-reforged-${mod_version}-${minecraft_version}.jar"
+    archiveFileName = "thaumcraft-4-reforged-${providers.gradleProperty('publication_version').getOrElse(mod_version)}.jar"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(java_version))
