@@ -19,13 +19,16 @@
 
 Скачайте JAR Thaumcraft из [релиза 1.0.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.1) и поместите его вместе с Curios и TerraBlender в папку `mods`.
 
-## Наши аддоны для 1.21.1
+## Наши моды и аддоны для 1.21.1
 
 - [Forbidden Magic](https://github.com/yzs57phbts-web/forbidden-magic-reforged)
 - [Thaumic Tinkerer](https://github.com/yzs57phbts-web/thaumic-tinkerer-reforged)
 - [Thaumic Horizons](https://github.com/yzs57phbts-web/thaumic-horizons-reforged)
 - [Thaumic Exploration](https://github.com/yzs57phbts-web/thaumic-exploration-reforged)
 - [Witching Gadgets](https://github.com/yzs57phbts-web/witching-gadgets-reforged)
+- [Tainted Magic](https://github.com/yzs57phbts-web/tainted-magic-reforged)
+- [Botania Revived](https://github.com/yzs57phbts-web/botania-revived)
+- [Blood Magic — Unofficial Port](https://github.com/yzs57phbts-web/blood-magic-unofficial-port)
 
 ## Пофиксили
 
