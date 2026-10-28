@@ -35,26 +35,40 @@ public final class HungryNodeFeedingGameTests {
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void craftingTableFeedsFabricoWithoutPrimalReduction(GameTestHelper h) throws Exception {
+        boolean originalHardNode = WorldGenConfig.hardNode;
         var node = node(h);
+        try {
         consume(h, node, new ItemStack(Items.CRAFTING_TABLE));
         h.assertTrue(node.getAspectsBase().size() == 1 && node.getNodeVisBase(Aspect.CRAFT) == 1,
             "Crafting table must grow Fabrico directly by one");
         h.assertTrue(node.getAspects().size() == 0, "Capacity growth must not also refill current vis");
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void depletedCompoundRefillsOneAndWholeStackIsNotMultiplied(GameTestHelper h) throws Exception {
+        boolean originalHardNode = WorldGenConfig.hardNode;
         var node = node(h);
+        try {
         node.setAspects(new AspectList().add(Aspect.CRAFT, 8));
         node.takeFromContainer(Aspect.CRAFT, 5);
         consume(h, node, new ItemStack(Items.CRAFTING_TABLE, 64));
         h.assertTrue(node.getNodeVisBase(Aspect.CRAFT) == 8 && node.getAspects().getAmount(Aspect.CRAFT) == 4,
             "A consumed stack must restore only one point; capacity must stay unchanged");
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void livingFoodKeepsItsOriginalAspects(GameTestHelper h) throws Exception {
-        var node = node(h); var pos = node.getBlockPos();
+        boolean originalHardNode = WorldGenConfig.hardNode;
+        var node = node(h);
+        try { var pos = node.getBlockPos();
         var zombie = new Zombie(EntityType.ZOMBIE, h.getLevel());
         zombie.setPos(pos.getX()+.6, pos.getY()+.5, pos.getZ()+.5); zombie.setHealth(.5F);
         h.getLevel().addFreshEntity(zombie);
@@ -66,10 +80,16 @@ public final class HungryNodeFeedingGameTests {
         var chosen = node.getAspectsBase().getAspects().getFirst();
         h.assertTrue(tags.getAmount(chosen) > 0 && node.getNodeVisBase(chosen) == 1, "Living food was reduced or overcounted");
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void capacityGrowthUsesOriginalRandomThreshold(GameTestHelper h) throws Exception {
-        var node = node(h); var pos = node.getBlockPos();
+        boolean originalHardNode = WorldGenConfig.hardNode;
+        var node = node(h);
+        try { var pos = node.getBlockPos();
         var method = NodeBlockEntity.class.getDeclaredMethod("feedOnKill", net.minecraft.server.level.ServerLevel.class, Entity.class, boolean.class);
         method.setAccessible(true); int grown = 0, unchanged = 0;
         for (int seed = 0; seed < 128; seed++) {
@@ -87,20 +107,32 @@ public final class HungryNodeFeedingGameTests {
         h.assertTrue(grown > 0 && unchanged > 0, "Random threshold did not exercise both outcomes");
         System.out.println("HUNGRY_FIXED random_trials=128 growth=" + grown + " unchanged=" + unchanged);
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void compoundCapacitySurvivesSaveAndLoad(GameTestHelper h) throws Exception {
-        var node = node(h); consume(h, node, new ItemStack(Items.CRAFTING_TABLE));
+        boolean originalHardNode = WorldGenConfig.hardNode;
+        var node = node(h);
+        try { consume(h, node, new ItemStack(Items.CRAFTING_TABLE));
         var saved = node.saveWithFullMetadata(h.getLevel().registryAccess());
         var restored = new NodeBlockEntity(node.getBlockPos(), node.getBlockState());
         restored.setLevel(h.getLevel()); restored.loadWithComponents(saved, h.getLevel().registryAccess());
         h.assertTrue(restored.getNodeVisBase(Aspect.CRAFT) == 1 && restored.getAspectsBase().size() == 1,
             "Compound capacity lost on actual NBT roundtrip");
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void containedItemAspectsAreIncludedLikeLegacyBonusTags(GameTestHelper h) throws Exception {
+        boolean originalHardNode = WorldGenConfig.hardNode;
         var node = node(h);
+        try {
         var phial = new ItemStack(thaumcraft.registry.ModItems.ESSENTIA_PHIAL.get());
         AspectKeys.ASPECTS.set(phial, new AspectList().add(Aspect.CRAFT, 8));
         var tags = AspectHelper.getBonusTags(phial, AspectHelper.getObjectTags(phial));
@@ -119,6 +151,10 @@ public final class HungryNodeFeedingGameTests {
         }
         h.assertTrue(found, "Contained compound was omitted from food valuation");
         h.succeed();
+            } finally {
+            h.getLevel().removeBlock(node.getBlockPos(), false);
+            WorldGenConfig.hardNode = originalHardNode;
+        }
     }
     @GameTest(template="test/platform", timeoutTicks=40)
     public static void energizedConversionStillReducesCompoundToPrimalCV(GameTestHelper h) {
