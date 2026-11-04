@@ -3,7 +3,7 @@
   "jar": "thaumonomicon-ui-1.21.1-1.2.1.jar",
   "sha256": "6e6fa965c3d26084a51647f25cd543adccb22a04c7ce566b2e8dcdb29c5e275a",
   "sources": {
-    "build.gradle": "caa7554f044436a7ac5e3d6a11faad8ce1fe057c34b43627c385f9177b02b9bd",
+    "build.gradle": "dfb917ac686e3cb4fbe430ae8bd440857033c90fc71452be165c40fc8d396051",
     "generate_buttons.py": "46eb75c5f2d287c59674df798934e904e63b63d09b5157908092ae19a6db5679",
     "generate_frames.py": "2fc313028e89397f713d558c7aed256cffa741b7f4ea60c81ede4332c0b462a9",
     "generate_zoom.py": "23f8657779c7884416ae0ef11f5e03f632ca505ae0db8882175c5167a014abce",
