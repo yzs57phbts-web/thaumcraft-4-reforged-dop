@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "key": "RunicGirdleKinetic",
+  "kind": "INFUSION",
+  "research": "RUNICKINETIC",
+  "owner": "thaumcraft",
+  "shapeless": false,
+  "instability": 7,
+  "output": {
+    "item": "thaumcraft:kinetic_shielding_girdle",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "thaumcraft:runic_shielding_girdle",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:balanced_shard",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:air_shard",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:wind_charge",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:potion",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:wind_charge",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:air_shard",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "tutamen": 33,
+    "praecantatio": 55,
+    "aer": 64
+  }
+}

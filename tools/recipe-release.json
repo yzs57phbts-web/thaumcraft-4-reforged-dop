@@ -1,0 +1,20 @@
+{
+  "owner": "thaumcraft",
+  "version": "1.0.3",
+  "previous_sha256": "58eef95a5103bfda724c3111ff8a8560c06df8ac2ae0ace9f2f5689510bd2e31",
+  "sha256": "2e9520e30ecce70d2ca382a3d2b71b4a1dee2e3af28c3c649b6772cdc8f42c37",
+  "changed_entries": [
+    "thaumcraft/Thaumcraft.class",
+    "thaumcraft/crafting/InfusionDiagram.class"
+  ],
+  "added_entries": [
+    "thaumcraft/EditedRecipes.class"
+  ],
+  "preserved_entries": 4296,
+  "artifact": "thaumcraft-4-reforged-1.0.3.jar",
+  "sources": [
+    "src/main/java/thaumcraft/EditedRecipes.java",
+    "src/main/java/thaumcraft/Thaumcraft.java",
+    "src/main/java/thaumcraft/crafting/InfusionDiagram.java"
+  ]
+}

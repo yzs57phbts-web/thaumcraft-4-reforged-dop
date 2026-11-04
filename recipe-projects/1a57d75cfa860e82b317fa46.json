@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "key": "FluxScrubber",
+  "kind": "ARCANE",
+  "research": "FLUXSCRUB",
+  "owner": "thaumcraft",
+  "shapeless": false,
+  "instability": 0,
+  "output": {
+    "item": "thaumcraft:flux_scrubber",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:stone",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "empty"
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:arcane_bellows",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "empty"
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:copper_grate",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:vis_filter",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:copper_grate",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:arcane_stone_bricks",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:essentia_tube",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:arcane_stone_bricks",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "aqua": 16,
+    "ordo": 16,
+    "aer": 8
+  }
+}

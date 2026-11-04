@@ -6,7 +6,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 repositories { maven { url = 'https://maven.blamejared.com' } }
 sourceSets { qa { compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath; runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath } }
 dependencies {
- compileOnly files(providers.gradleProperty('thaumcraftJar').getOrElse('../build/libs/thaumcraft-4-reforged-1.0.2.jar'))
+ compileOnly files(providers.gradleProperty('thaumcraftJar').getOrElse('../build/libs/thaumcraft-4-reforged-1.0.3.jar'))
  compileOnly 'mezz.jei:jei-1.21.1-neoforge:19.57.0.451'
 }
 neoForge { version = '21.1.265'; mods { thaumonomiconui { sourceSet sourceSets.main } } }

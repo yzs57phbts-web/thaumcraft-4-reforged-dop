@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "key": "GolemBell",
+  "kind": "ARCANE",
+  "research": "GOLEMBELL",
+  "owner": "thaumcraft",
+  "shapeless": false,
+  "instability": 0,
+  "output": {
+    "item": "thaumichorizons:golem_bell",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:stone",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "empty"
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:quartz",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:amethyst_shard",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "empty"
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:quartz",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:quartz",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "tag",
+      "tag": "c:rods/wooden"
+    },
+    {
+      "type": "empty"
+    },
+    {
+      "type": "empty"
+    }
+  ],
+  "aspects": {
+    "ordo": 5
+  }
+}

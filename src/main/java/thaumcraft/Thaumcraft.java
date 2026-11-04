@@ -42,6 +42,7 @@ public class Thaumcraft {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Thaumcraft(IEventBus modEventBus, ModContainer modContainer) {
+        modEventBus.addListener((net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent event) -> event.enqueueWork(EditedRecipes::register));
         thaumcraft.platform.GameplayConfig.register(modEventBus, modContainer);
         thaumcraft.entity.golem.GolemKeys.init();
         AspectKeys.init();

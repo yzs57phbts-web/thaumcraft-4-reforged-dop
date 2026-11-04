@@ -2,7 +2,7 @@
 
 Неофициальная доработанная версия **Thaumcraft 4: Reforged** для **Minecraft 1.21.1 / NeoForge**.
 
-Текущий выпуск — **1.0.2** для Minecraft 1.21.1 / NeoForge. Это наша доработанная версия полного порта Thaumcraft 4.
+Текущий выпуск — **1.0.3** для Minecraft 1.21.1 / NeoForge. Это наша доработанная версия полного порта Thaumcraft 4.
 
 Проект основан на [порте notlikethiss](https://github.com/notlikethiss/thaumcraft-4-reforged). Ниже перечислены исправления и доработки относительно его ветки `mc/1.21.1`, коммита [`17dd730`](https://github.com/notlikethiss/thaumcraft-4-reforged/tree/17dd73087e52bf918cd7f580abd2114e44f88544).
 
@@ -17,7 +17,7 @@
 
 Ссылки ведут на совместимые версии для Minecraft 1.21.1 / NeoForge на CurseForge.
 
-Скачайте JAR Thaumcraft из [релиза 1.0.2](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.2) и поместите его вместе с Curios и TerraBlender в папку `mods`.
+Скачайте JAR Thaumcraft из [релиза 1.0.2](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.3) и поместите его вместе с Curios и TerraBlender в папку `mods`.
 
 Управление Таумономиконом уже включено в основной JAR. Если раньше был установлен отдельный `thaumonomicon-ui-*.jar`, удалите его из `mods`, чтобы не дублировать встроенный модуль. JEI для работы книги не обязателен.
 
@@ -118,7 +118,7 @@
 
 ## Сборка и версия
 
-Нужен Java 21. Команда `./gradlew build` собирает `thaumcraft-4-reforged-1.0.2.jar`.
+Нужен Java 21. Команда `./gradlew build` собирает `thaumcraft-4-reforged-1.0.3.jar`.
 Номер релиза и файла — 1.0.2. Внутренний номер мода сохранён для совместимости с уже выпущенными аддонами, требующими ветку 1.1.
 
 ## Основа и авторы
@@ -132,3 +132,8 @@
 ## Условия использования
 
 Эта страница не изменяет условия использования оригинального Thaumcraft, исходного порта и сторонних материалов. Авторство и лицензионные уведомления исходного порта и используемых материалов сохранены в репозитории.
+
+
+## Рецепты 1.0.3
+
+Добавлены 5 сохранённых рецептов редактора: `FluxScrubber`, `GolemBell`, `RunicGirdleKinetic`, `ArcaneEar`, `RunicGirdleKinetic_2`. Состав, аспекты, количество и данные предметов сохранены в `recipe-projects`. Рецепты применяются после родной регистрации; межмодовые варианты включаются при наличии указанных в них аддонов.

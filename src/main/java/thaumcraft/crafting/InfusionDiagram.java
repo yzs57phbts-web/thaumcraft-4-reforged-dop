@@ -51,8 +51,8 @@ public final class InfusionDiagram {
             case "HoverHarness" -> new int[]{7,1,0,3,5,6,2,4};
             default -> null;
         };
-        if(selected!=null)return polygon(count,selected);
-        if(manual!=null){if(manual.length!=count)throw new IllegalArgumentException("Infusion diagram ingredient count: "+key+" "+count);return Arrays.asList(manual);}
+        if(selected!=null && selected.length==count)return polygon(count,selected);
+        if(manual!=null && manual.length==count)return Arrays.asList(manual);
         var points=new ArrayList<int[]>();for(int i=0;i<count;i++){double a=-Math.PI/2+2*Math.PI*i/count;points.add(new int[]{(int)Math.round(Math.cos(a)*40),(int)Math.round(Math.sin(a)*40)});}return points;
     }
     private static List<int[]> polygon(int count,int[] order){

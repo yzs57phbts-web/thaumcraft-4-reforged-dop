@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "key": "ArcaneEar",
+  "kind": "ARCANE",
+  "research": "ARCANEEAR",
+  "owner": "thaumcraft",
+  "shapeless": false,
+  "instability": 0,
+  "output": {
+    "item": "thaumcraft:arcane_ear",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:stone",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:gold_ingot",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:calibrated_sculk_sensor",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:gold_ingot",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:gold_ingot",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:zombie_brain",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:gold_ingot",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:greatwood_planks",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:redstone",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:greatwood_planks",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "aer": 10,
+    "ordo": 10
+  }
+}
