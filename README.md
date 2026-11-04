@@ -2,22 +2,25 @@
 
 Неофициальная доработанная версия **Thaumcraft 4: Reforged** для **Minecraft 1.21.1 / NeoForge**.
 
-Текущий выпуск — **1.0.1** для Minecraft 1.21.1 / NeoForge. Это наша доработанная версия полного порта Thaumcraft 4.
+Текущий выпуск — **1.0.2** для Minecraft 1.21.1 / NeoForge. Это наша доработанная версия полного порта Thaumcraft 4.
 
 Проект основан на [порте notlikethiss](https://github.com/notlikethiss/thaumcraft-4-reforged). Ниже перечислены исправления и доработки относительно его ветки `mc/1.21.1`, коммита [`17dd730`](https://github.com/notlikethiss/thaumcraft-4-reforged/tree/17dd73087e52bf918cd7f580abd2114e44f88544).
 
 ## Для запуска
 
-Нужны **Minecraft 1.21.1**, **NeoForge 21.1.256 или новее** и **Java 21**.
+Нужны **Minecraft 1.21.1**, **NeoForge 21.1.264 или новее** и **Java 21**.
 
 Обязательные моды:
 
 - [Curios API 9.5.1](https://www.curseforge.com/minecraft/mc-mods/curios/files/6529130)
-- [TerraBlender 4.1.0.1+ (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947)
+- [TerraBlender 4.1.0.2+ (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947)
 
 Ссылки ведут на совместимые версии для Minecraft 1.21.1 / NeoForge на CurseForge.
 
-Скачайте JAR Thaumcraft из [релиза 1.0.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.1) и поместите его вместе с Curios и TerraBlender в папку `mods`.
+Скачайте JAR Thaumcraft из [релиза 1.0.2](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.2) и поместите его вместе с Curios и TerraBlender в папку `mods`.
+
+Управление Таумономиконом уже включено в основной JAR. Если раньше был установлен отдельный `thaumonomicon-ui-*.jar`, удалите его из `mods`, чтобы не дублировать встроенный модуль. JEI для работы книги не обязателен.
+
 
 ## Наши моды и аддоны для 1.21.1
 
@@ -82,6 +85,9 @@
 
 ## Добавили
 
+- Открытие Таумономикона кнопкой из инвентаря, обычного и магического верстаков. Кнопка появляется, когда книга есть у игрока.
+- Боковую панель Таумономикона рядом с инвентарём: расстояние учитывает вкладки аддонов и открытые страницы исследований.
+- Приближение и отдаление карты исследований колесом мыши — от 50 до 200%.
 - Двери, люки, заборы и калитки великого и серебряного дерева.
 - Обычные и подвесные таблички обеих пород.
 - Лодки и лодки с сундуком обеих пород.
@@ -112,8 +118,8 @@
 
 ## Сборка и версия
 
-Нужен Java 21. Команда `./gradlew build` собирает `thaumcraft-4-reforged-1.0.1.jar`.
-Номер релиза и файла — 1.0.1. Внутренний номер мода сохранён для совместимости с уже выпущенными аддонами, требующими ветку 1.1.
+Нужен Java 21. Команда `./gradlew build` собирает `thaumcraft-4-reforged-1.0.2.jar`.
+Номер релиза и файла — 1.0.2. Внутренний номер мода сохранён для совместимости с уже выпущенными аддонами, требующими ветку 1.1.
 
 ## Основа и авторы
 

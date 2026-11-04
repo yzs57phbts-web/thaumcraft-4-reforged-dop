@@ -369,3 +369,13 @@ tasks.named('runAlchemyAuditServer') {
         }
     }
 }
+
+// Prebuilt client module and its full sources live together in client-ui/.
+// This keeps T4's internal version/API stable and ships one installable JAR.
+tasks.named('jar', Jar) {
+    from('client-ui/dist/thaumonomicon-ui-1.21.1-1.2.1.jar') { into 'META-INF/jarjar' }
+    from('client-ui/jarjar-metadata.json') {
+        into 'META-INF/jarjar'
+        rename { 'metadata.json' }
+    }
+}

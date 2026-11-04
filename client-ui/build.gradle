@@ -1,0 +1,15 @@
+plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
+version = '1.2.1'
+group = 'local.thaumonomiconui'
+base { archivesName = 'thaumonomicon-ui-1.21.1' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories { maven { url = 'https://maven.blamejared.com' } }
+sourceSets { qa { compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath; runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath } }
+dependencies {
+ compileOnly files(providers.gradleProperty('thaumcraftJar').getOrElse('../build/libs/thaumcraft-4-reforged-1.0.2.jar'))
+ compileOnly 'mezz.jei:jei-1.21.1-neoforge:19.57.0.451'
+}
+neoForge { version = '21.1.265'; mods { thaumonomiconui { sourceSet sourceSets.main } } }
+tasks.register('qaJar', Jar) { dependsOn qaClasses; from sourceSets.qa.output; archiveClassifier = 'qa' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }

@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="thaumonomiconui"
+version="1.2.1"
+displayName="Thaumonomicon Controls"
+description="Research map zoom and inventory Thaumonomicon button."
+[[mixins]]
+config="thaumonomiconui.mixins.json"
+[[dependencies.thaumonomiconui]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="CLIENT"
+[[dependencies.thaumonomiconui]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.264,)"
+side="CLIENT"
+[[dependencies.thaumonomiconui]]
+modId="thaumcraft"
+type="required"
+versionRange="[1.1-bbtt.29,1.2)"
+ordering="AFTER"
+side="CLIENT"
